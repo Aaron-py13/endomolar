@@ -727,3 +727,134 @@ body{background:linear-gradient(180deg,#f7fbff,#edf6ff)}
   #odonto-app .df-workflow-summary{display:none!important}
   #odonto-app .df-workflow-content{display:block!important}
 }
+
+
+/* ============================================================
+   ENDOMOLAR - AJUSTES RESPONSIVE, VERSION 11/2026
+   Importante: reglas al final para superar estilos de escritorio
+   que anteriormente anulaban el breakpoint de 940 px.
+   ============================================================ */
+@media screen and (max-width: 940px) {
+  html,body,#workspace,#app {width:100%;max-width:100%;min-width:0;}
+  body {overflow-x:hidden;}
+  #workspace,#app {display:block;}
+  .shell {display:block!important;grid-template-columns:none!important;width:100%;max-width:100%;min-width:0;}
+  .shell>.main,.main {display:block;width:100%;max-width:100%;min-width:0;margin:0;}
+  .main-body {width:100%;min-width:0;max-width:100%;padding:20px 18px;}
+  .topbar {width:100%;min-width:0;max-width:100%;padding:0 18px;}
+  .mobile-toggle {display:inline-flex!important;}
+  .sidebar {position:fixed!important;top:0;left:0;width:min(290px,85vw);height:100vh;height:100dvh;z-index:105;transform:translateX(-105%);transition:transform .2s ease;overflow-y:auto;border-radius:0 18px 18px 0;}
+  .sidebar.open {transform:translateX(0)!important;}
+  .overlay-mobile.show {display:block;position:fixed;inset:0;background:rgba(8,27,54,.62);z-index:104;}
+  .home-main-grid,.cols-two,.cols-equal,.split-content {grid-template-columns:minmax(0,1fr);}
+  .panel,.metric,.metric-grid,.home-main-grid>*,.cols-two>*,.cols-equal>*,.quote-editor-grid>* {min-width:0;max-width:100%;}
+  .toolbar {flex-wrap:wrap;min-width:0;}
+  .table-scroll {max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .page-head {min-width:0;}
+  .page-head h1 {overflow-wrap:anywhere;}
+  .page-actions {max-width:100%;}
+  .form-grid,.quote-info-grid {min-width:0;}
+}
+@media screen and (max-width:690px){
+  .main-body {padding:16px 12px 28px;}
+  .topbar {height:64px;padding:0 12px;gap:8px;}
+  .topbar-left,.topbar-right {min-width:0;gap:8px;}
+  .topbar .search-global {display:none;}
+  .topbar .userbox {padding-left:8px;}
+  .topbar .userbox>div:last-child,.top-role,.notification-dot {display:none;}
+  .page-head {display:flex;flex-direction:column;align-items:stretch;gap:13px;margin-bottom:15px;}
+  .page-head h1 {font-size:clamp(23px,6vw,29px);}
+  .page-head p {line-height:1.45;}
+  .page-actions {display:flex;flex-wrap:wrap;width:100%;gap:8px;}
+  .page-actions .btn {flex:1 1 150px;max-width:100%;white-space:normal;}
+  .v3-welcome {width:100%;min-height:0;padding:19px 16px;border-radius:16px;}
+  .v3-welcome h2 {font-size:clamp(19px,5.5vw,25px);line-height:1.25;max-width:80%;}
+  .v3-welcome p {max-width:75%;line-height:1.45;overflow-wrap:anywhere;}
+  .hero-dental {width:85px;height:90px;right:11px;top:22px;}
+  .v3-metrics,.metric-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+  .v3-metrics .metric,.metric {min-width:0;padding:12px 10px;gap:8px;flex-wrap:wrap;}
+  .v3-metrics .metric label,.metric label {overflow-wrap:anywhere;white-space:normal;font-size:11px;}
+  .v3-metrics .metric strong,.metric strong {font-size:clamp(18px,5.5vw,25px);white-space:normal;overflow-wrap:anywhere;}
+  .v3-metrics .metric-icon {width:38px;height:38px;flex-shrink:0;}
+  .home-main-grid,.cols-two,.cols-equal,.split-content {grid-template-columns:minmax(0,1fr);gap:13px;}
+  .home-main-grid .panel {min-height:0;}
+  .home-main-grid .panel-head {padding:17px 14px 10px;}
+  .home-appointments,.followup-list {padding:3px 11px 13px;}
+  .work-appointment {gap:8px;flex-wrap:wrap;}
+  .work-person {flex:1 1 125px;min-width:0;}
+  .work-person strong,.work-person small {max-width:100%;}
+  .work-end {margin-left:auto;}
+  .panel-head {flex-wrap:wrap;}
+  .panel-pad {padding:15px;}
+  .toolbar .input-search {width:100%;max-width:100%;}
+  .toolbar .input-search input {width:100%;min-width:0;}
+  .patient-banner-main {min-width:0;}
+  .patient-banner-actions {width:100%;}
+  .patient-tabs {gap:7px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .patient-tabs .tab {flex:0 0 auto;min-height:43px;}
+  .dental-main-grid {display:grid;grid-template-columns:minmax(0,1fr)!important;gap:12px;}
+  .dental-main-grid>.tools-panel {grid-column:1!important;grid-row:1!important;}
+  .odonto-center-column {grid-column:1!important;grid-row:2!important;max-width:100%;width:100%;}
+  .dental-main-grid>.dental-detail-card {grid-column:1!important;grid-row:3!important;width:100%;}
+  #odonto-app .tools-panel .finding-tools {display:flex;flex-wrap:wrap;gap:6px;}
+  #odonto-app .finding-tool {min-height:37px;max-width:100%;}
+  #odonto-app .dental-chart-panel {max-width:100%;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  #odonto-app .dental-grid {min-width:620px;grid-template-columns:repeat(16,minmax(34px,1fr));gap:3px;}
+  #odonto-app .fancy-tooth {min-height:82px;padding:6px 0;}
+  #odonto-app .fancy-tooth .tooth-figure {height:52px;}
+  #odonto-app .jaw-label,#odonto-app .dental-midline {min-width:620px;}
+  #odonto-app .dental-chart-panel:before {content:'Desliza el mapa a los lados para ver todos los dientes';display:block;font-size:11px;color:#6689a5;margin:0 0 9px;}
+  .od-compact-fields {grid-template-columns:repeat(2,minmax(0,1fr));}
+  #odonto-app .dental-detail-card {width:100%;max-width:100%;}
+  .quote-editor-grid {grid-template-columns:minmax(0,1fr);}
+  .quote-section {padding:14px;}
+  .quote-jaw-chart {overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;}
+  .quote-teeth {min-width:620px;grid-template-columns:repeat(16,minmax(34px,1fr));gap:3px;}
+  .quote-tooth span {height:47px;}
+  .quote-tooth small {font-size:10px;}
+  .quote-jaw-chart:before {content:'Desliza para seleccionar otras piezas dentales';display:block;font-size:11px;color:#6689a5;margin:0 0 10px;}
+  .quote-info-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .quote-actions-panel {padding:16px;}
+  .quote-bottom-actions .btn {white-space:normal;}
+  .modal-overlay {padding:9px;align-items:center;}
+  .modal {max-width:100%;max-height:calc(100dvh - 18px);}
+  .modal-top,.modal-content,.modal-footer {padding:15px;}
+  .modal-footer {flex-wrap:wrap;}
+  .modal-footer .btn {flex:1 1 120px;}
+}
+@media screen and (max-width:430px) {
+  .metric-grid,.v3-metrics {gap:8px;}
+  .metric,.v3-metrics .metric {padding:11px 9px;}
+  .metric strong,.v3-metrics .metric strong {font-size:21px;}
+  .metric-icon {width:34px!important;height:34px!important;}
+  .quote-info-grid {grid-template-columns:minmax(0,1fr);}
+  .quote-kpis {grid-template-columns:minmax(0,1fr);}
+  .od-compact-fields {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .patient-large {width:50px;height:50px;}
+}
+/* Medium tablets: retain full-width content, readable cards. */
+@media screen and (min-width:691px) and (max-width:940px){
+ .metric-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .home-main-grid {grid-template-columns:minmax(0,1fr);}
+ .main-body {padding:23px 22px;}
+}
+
+/* Pacientes: fichas completas en móvil en vez de una tabla cortada. */
+@media screen and (max-width:690px){
+ .patients-list-panel{overflow:hidden;}
+ .patients-list-panel .table-scroll{overflow:visible;}
+ .patients-list-panel .data-table,.patients-list-panel .data-table tbody{display:block;width:100%;min-width:0;white-space:normal;}
+ .patients-list-panel .data-table thead{display:none;}
+ .patients-list-panel .data-table tr[data-patient-row]{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 10px;align-items:center;padding:14px;border-bottom:1px solid #e7f1f8;}
+ .patients-list-panel .data-table tr[data-patient-row]:last-child{border-bottom:0;}
+ .patients-list-panel .data-table tr[data-patient-row] td{display:block;padding:0;border:0;white-space:normal;min-width:0;}
+ .patients-list-panel .data-table tr[data-patient-row] td:first-child{grid-column:1/-1;margin-bottom:3px;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(2){grid-column:1;grid-row:2;color:#65819e;font-size:11px;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(2):before{content:'Odontólogo: ';font-weight:700;color:#315c83;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(3){grid-column:1;grid-row:3;color:#65819e;font-size:11px;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(3):before{content:'Tratamientos: ';font-weight:700;color:#315c83;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(4){grid-column:2;grid-row:2/4;align-self:center;}
+ .patients-list-panel .data-table tr[data-patient-row] td:nth-child(4) .btn{white-space:nowrap;}
+ .table-scroll:not(.patients-list-panel .table-scroll){scrollbar-width:thin;}
+ .quote-list .table-scroll:before{content:'Desliza la tabla para ver los demás datos y acciones';display:block;font-size:11px;color:#62809d;padding:10px 12px 4px;}
+}

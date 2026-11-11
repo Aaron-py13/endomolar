@@ -22,3 +22,16 @@
 
 /* Registros de prueba compartidos con el dashboard */
 .linked-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.linked-summary .info-card{padding:22px}.linked-summary .info-card strong{overflow-wrap:anywhere}.linked-list{display:grid;gap:14px}.linked-item{padding:17px;border:1px solid #e0ebf7;border-radius:13px;background:#fbfdff}.linked-item p{margin:9px 0 0;color:#6585a5;font-size:12px;line-height:1.6}.linked-top{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap}.linked-top strong{font-size:14px}.linked-track{height:9px;background:#e5effb;border-radius:999px;overflow:hidden;margin-top:13px}.linked-track span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#0877d5,#32d2e5)}@media(max-width:670px){.linked-summary{grid-template-columns:1fr}.linked-summary .info-card{padding:18px}}
+
+/* Endomolar: correcciones de visualización para iPhone, Android y tablets */
+@media screen and (max-width:650px){
+ html,body,#app{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
+ .page-container,.page-container>*,.hero-grid>*,.bottom-grid>*,.profile-wrap>*{min-width:0;max-width:100%;}
+ .tooth-panel{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+ .tooth-panel:before{content:'Desliza hacia los lados para explorar tus dientes';display:block;color:#6b91b1;font-size:11px;margin-bottom:8px;}
+ .tooth-row{min-width:600px;grid-template-columns:repeat(16,minmax(35px,1fr));gap:2px;}
+ .tooth-btn .icon{width:26px;height:33px;}
+ .tooth-btn small{font-size:10px;}
+ .mobile-nav{width:100%;}
+ .payment-grid,.hero-grid,.bottom-grid,.info-grid,.profile-wrap{grid-template-columns:minmax(0,1fr);}
+}
