@@ -1,0 +1,729 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#162c46;background:#f5f8fd;font-synthesis:none;--navy:#0b2648;--blue:#1469dd;--cyan:#05a8cf;--ink:#142a47;--muted:#72849a;--line:#e2eaf3;--paper:#fff;--wash:#f5f9fd;--green:#15936b;--orange:#d98b20;--red:#d85364;--shadow:0 14px 42px rgba(22,59,104,.065);--radius:18px}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}a{text-decoration:none;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #7acafa;outline-offset:2px}.hidden,[hidden]{display:none!important}.svgicon{display:inline-flex;width:20px;height:20px;flex-shrink:0;align-items:center;justify-content:center}.svgicon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.tinyicon{width:17px;height:17px}.muted{color:var(--muted)}.small{font-size:12px}.micro{font-size:11px}.bold{font-weight:750}.text-right{text-align:right}.center{text-align:center}.pill{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;font-size:11px;font-weight:750;border-radius:999px;white-space:nowrap;background:#eaf2ff;color:#286dca}.pill.green{background:#e2f7ef;color:#098c65}.pill.orange{background:#fff2d9;color:#a76e13}.pill.red{background:#ffe9eb;color:#c44556}.pill.violet{background:#eaf6fe;color:#5087c1}.pill.gray{background:#eef2f7;color:#728095}.pill.cyan{background:#e0f8fb;color:#087b99}.btn{border:0;background:var(--blue);color:#fff;padding:11px 16px;border-radius:11px;font-size:13px;font-weight:750;display:inline-flex;align-items:center;gap:8px;justify-content:center;min-height:40px;transition:.18s}.btn:hover{background:#0d58bc;transform:translateY(-1px)}.btn.ghost{background:#fff;color:#2e587a;border:1px solid #d8e5f3}.btn.ghost:hover{background:#f3f8ff}.btn.dark{background:#122e52}.btn.danger{background:#fff0f1;color:#c64051}.btn.sm{min-height:31px;padding:6px 10px;font-size:11px;border-radius:9px}.btn.iconbtn{padding:7px;min-width:34px}.tag{font-size:11px;color:#7f91a6;text-transform:uppercase;letter-spacing:.095em;font-weight:780}.notice{display:flex;gap:8px;align-items:flex-start;background:#eff7fd;border:1px solid #cceafa;padding:12px 15px;border-radius:12px;font-size:12px;color:#28526d;line-height:1.55}.login{min-height:100vh;display:grid;grid-template-columns:1.08fr .92fr;background:#eef5fc}.login-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b274e 0%,#06467d 55%,#0a94b8 100%);padding:clamp(30px,5vw,72px);color:#fff;display:flex;flex-direction:column}.login-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 78%,rgba(90,223,251,.25),transparent 46%),linear-gradient(115deg,transparent 42%,rgba(255,255,255,.045));pointer-events:none}.login-logo,.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.045em}.login-logo{font-size:31px;position:relative;z-index:1}.logo-tooth{color:#73e5ff;display:inline-flex}.login-copy{position:relative;z-index:1;margin:auto 0}.login-copy h1{font-size:clamp(35px,4.2vw,62px);letter-spacing:-.055em;line-height:1.085;max-width:600px;margin:0 0 23px}.login-copy h1 span{color:#a7eaff}.login-copy p{color:#c6e1f5;font-size:17px;line-height:1.7;max-width:510px;margin:0 0 28px}.login-features{display:grid;grid-template-columns:1fr 1fr;gap:13px;max-width:580px}.login-feature{border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:15px;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700}.login-feature .svgicon{color:#70e2f4}.hero-tooth{position:absolute;width:min(49vw,580px);height:min(49vw,580px);right:-135px;bottom:-130px;color:#d0f5ff;opacity:.11;transform:rotate(-19deg)}.login-foot{font-size:11px;color:#b6d5e6;position:relative;z-index:1;margin-top:35px}.login-side{display:flex;align-items:center;justify-content:center;padding:40px 28px}.login-panel{width:min(440px,100%);background:#fff;box-shadow:0 20px 70px rgba(42,75,114,.1);border:1px solid #e7eff7;border-radius:23px;padding:clamp(24px,3vw,42px)}.login-panel .welcome-icon{width:56px;height:56px;background:#e6f5ff;color:#1393c5;display:grid;place-items:center;border-radius:17px;margin-bottom:20px}.login-panel h2{font-size:29px;margin:0 0 7px;letter-spacing:-.045em}.login-panel>p{font-size:14px;color:#8191a5;margin:0 0 25px;line-height:1.6}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:12px;color:#425871;font-weight:750}.field input,.field select,.field textarea{border:1px solid #dbe6f1;border-radius:10px;padding:11px 12px;background:#fff;color:#233a55;min-width:0;outline:none;width:100%;font-size:13px}.field textarea{min-height:92px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#65addd;box-shadow:0 0 0 3px rgba(40,144,222,.1)}.login-panel .field{margin:0 0 15px}.login-panel .btn{width:100%;min-height:47px}.login-demo{margin-top:22px;border-top:1px solid #e8edf4;padding-top:17px;color:#72859b;font-size:12px;line-height:1.6}.err{color:#c24050;font-size:12px;min-height:20px}.shell{min-height:100vh;display:grid;grid-template-columns:246px minmax(0,1fr)}.sidebar{background:linear-gradient(180deg,#102f55,#0a2647 75%);color:#c3d5e9;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:auto}.brand{font-size:25px;color:#fff;padding:27px 23px 23px}.brand .svgicon{width:34px;height:34px;color:#66dffe}.brand span span{color:#63dcfc}.side-label{font-size:10px;color:#7f9bb6;text-transform:uppercase;letter-spacing:.14em;font-weight:750;margin:16px 25px 11px}.nav{display:grid;gap:3px;padding:0 12px}.nav-btn{background:transparent;border:0;color:#c0d0e3;border-radius:10px;display:flex;align-items:center;gap:13px;text-align:left;width:100%;padding:12px 14px;font-size:13px;font-weight:650}.nav-btn:hover{color:#fff;background:#ffffff14}.nav-btn.active{background:linear-gradient(90deg,#1a6bd7,#1862b4);color:#fff;box-shadow:0 7px 20px #041e3950}.nav-btn .svgicon{width:19px;height:19px}.sidebar-bottom{margin-top:auto;padding:18px 15px}.clinic-chip{background:#ffffff12;border:1px solid #ffffff1b;padding:11px 12px;border-radius:12px;display:flex;gap:10px;align-items:center}.clinic-chip .svgicon{color:#72d7f2}.clinic-chip strong{display:block;color:#fff;font-size:12px}.clinic-chip span{display:block;color:#adbed1;font-size:10px;margin-top:3px}.demo-chip{border-radius:8px;background:#f9c8671f;color:#ffd17d;padding:8px 10px;margin-bottom:12px;font-size:10px;line-height:1.4}.main{min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid #e4ebf4;display:flex;align-items:center;justify-content:space-between;padding:0 31px;gap:18px}.topbar-left{display:flex;align-items:center;gap:14px;min-width:0}.topbar-right{display:flex;align-items:center;gap:12px}.topbar .search-global{color:#8ca0b6;background:#f4f8fd;border:1px solid #e6edf5;padding:9px 12px;border-radius:10px;display:flex;align-items:center;gap:10px;font-size:12px;width:min(330px,35vw)}.avatar{height:36px;width:36px;border-radius:12px;background:#d7effc;color:#0a629a;font-weight:850;display:grid;place-items:center;font-size:12px;flex-shrink:0}.userbox{display:flex;align-items:center;gap:9px;text-align:right}.userbox strong{display:block;font-size:12px}.userbox small{font-size:10px;color:#8c9bab}.main-body{padding:31px;max-width:1800px;margin:auto}.page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:24px}.page-head h1{margin:5px 0 4px;font-size:30px;letter-spacing:-.045em;color:#142845}.page-head p{margin:0;color:#8392a7;font-size:13px}.page-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:18px}.metric{border:1px solid #e6edf5;border-radius:17px;background:#fff;box-shadow:var(--shadow);padding:20px;display:flex;align-items:flex-start;gap:14px;min-width:0}.metric .metric-icon{height:45px;width:45px;border-radius:13px;display:grid;place-items:center;flex-shrink:0;background:#e7f4ff;color:#167aca}.metric .metric-icon.green{background:#e0f8ed;color:#15966c}.metric .metric-icon.violet{background:#eef8fe;color:#5696db}.metric .metric-icon.orange{background:#fff1dd;color:#c98625}.metric .metric-icon.cyan{background:#e5fafc;color:#0794b3}.metric .metric-icon .svgicon{width:23px;height:23px}.metric label{display:block;color:#8091a5;font-size:11px;font-weight:700;margin-bottom:7px}.metric strong{display:block;font-size:27px;color:#0f2547;letter-spacing:-.055em;white-space:nowrap}.metric small{display:block;font-size:11px;margin-top:5px;color:#8d9cad}.panel{background:#fff;border:1px solid #e5edf5;box-shadow:var(--shadow);border-radius:18px;min-width:0;overflow:hidden}.panel-pad{padding:21px}.panel-head{padding:19px 21px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px}.panel-head h3{margin:0 0 4px;font-size:16px;letter-spacing:-.015em}.panel-head p{margin:0;font-size:11px;color:#8796a9}.panel-head .btn{flex-shrink:0}.cols-two{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(290px,.95fr);gap:18px}.cols-equal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.welcome{border-radius:18px;background:linear-gradient(107deg,#063968,#146cbc 75%,#22abca);color:white;display:flex;justify-content:space-between;align-items:center;overflow:hidden;margin-bottom:19px;padding:24px 29px;position:relative}.welcome h2{font-size:23px;letter-spacing:-.035em;margin:6px 0 8px}.welcome p{font-size:12px;color:#d2ecff;margin:0;max-width:540px;line-height:1.6}.welcome .svgicon{width:130px;height:130px;opacity:.16;position:absolute;right:28px;bottom:-40px}.table-scroll{overflow-x:auto}.data-table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:12px;text-align:left}.data-table th{background:#f6f9fd;color:#788aa1;text-transform:none;font-size:11px;font-weight:750;padding:12px 17px;border-bottom:1px solid #ecf0f5}.data-table td{padding:13px 17px;border-bottom:1px solid #eef2f7;color:#3d5069;vertical-align:middle}.data-table tr:last-child td{border-bottom:0}.data-table tbody tr:hover{background:#f9fbfe}.table-main{font-weight:800;color:#233853}.table-meta{font-size:10px;color:#93a2b6;margin-top:3px}.link-btn{border:0;background:transparent;color:#146dda;font-weight:780;font-size:11px;padding:3px}.link-btn:hover{text-decoration:underline}.list-appointments{display:grid;gap:0;padding:0 15px 10px}.appointment-item{display:grid;grid-template-columns:57px 1fr auto;align-items:center;gap:10px;padding:12px 5px;border-bottom:1px solid #edf2f7;font-size:12px}.appointment-item:last-child{border-bottom:0}.appointment-item time{border-radius:9px;background:#eaf3ff;color:#1e6ec8;font-weight:800;text-align:center;padding:8px 4px;font-size:11px}.appointment-item strong{display:block;color:#263b56;font-size:12px}.appointment-item small{display:block;color:#8a9bb0;font-size:10px;margin-top:3px}.quick-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.quick-link{padding:18px 12px;border:1px solid #e0eaf5;border-radius:13px;background:linear-gradient(180deg,#fff,#fbfdff);color:#375571;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-weight:750;font-size:12px;min-height:108px}.quick-link:hover{border-color:#9acbea;background:#f5fbff}.quick-link .svgicon{width:27px;height:27px;color:#197bcd}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:15px}.toolbar-left,.toolbar-right{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.input-search{height:40px;display:flex;align-items:center;gap:7px;background:#fff;border:1px solid #dae6f2;border-radius:10px;padding:0 12px;color:#92a1b0;min-width:260px}.input-search input{border:0;outline:0;min-width:0;flex:1;color:#29445e;font-size:12px}.input-slim{background:white;border:1px solid #dae6f2;padding:9px 11px;border-radius:10px;font-size:12px;color:#516985;min-height:40px}.patient-name{display:flex;gap:10px;align-items:center}.table-avatar{background:#e4f3fa;border-radius:10px;width:35px;height:35px;display:grid;place-items:center;font-weight:800;color:#1882b5}.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid #e2eaf4;padding:0 15px}.tab{color:#71849b;background:none;border:0;padding:15px 12px;font-size:12px;font-weight:700;white-space:nowrap;border-bottom:2px solid transparent}.tab:hover{color:#165fb0}.tab.active{color:#1769c6;border-bottom-color:#1769c6}.detail-card{border:1px solid #e6edf5;border-radius:15px;padding:18px;background:#fff}.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.info-item small{font-size:10px;color:#8e9eb0;display:block;margin-bottom:5px}.info-item strong{font-size:13px;color:#354d67;display:block;word-break:break-word}.subheading{font-size:15px;color:#284360;margin:0 0 13px}.timeline{display:grid;gap:13px}.timeline-item{display:grid;grid-template-columns:15px 1fr;gap:12px}.timeline-marker{width:11px;height:11px;background:#19adc9;border:3px solid #dff6f8;border-radius:100%;margin-top:5px}.timeline-box{border:1px solid #e6edf3;background:#fff;border-radius:12px;padding:14px}.timeline-box strong{font-size:12px;color:#2d4865}.timeline-box p{font-size:12px;color:#60748a;margin:6px 0;line-height:1.6}.timeline-box small{font-size:10px;color:#9aabbc}.empty{padding:35px 20px;color:#8ea0b3;text-align:center;font-size:12px;line-height:1.65}.empty .svgicon{width:34px;height:34px;color:#c0d1e0;margin-bottom:9px}.tooth-layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:16px}.odontocard{padding:18px 13px}.tooth-header{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:15px}.tooth-header h3{margin:0;font-size:16px}.tooth-arch-title{font-size:10px;text-transform:uppercase;color:#889bb0;letter-spacing:.1em;font-weight:800;margin:14px 0 10px;text-align:center}.teeth-grid{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:3px;padding:8px 2px}.tooth-btn{display:flex;flex-direction:column;align-items:center;gap:4px;background:transparent;border:1px solid transparent;border-radius:9px;padding:6px 1px;color:#5c7088;min-width:0}.tooth-btn:hover{background:#f0f8ff}.tooth-btn.selected{background:#e5f4ff;border-color:#74baf1}.tooth-btn .tooth-figure{width:100%;max-width:35px;height:53px}.tooth-btn .tooth-figure svg{width:100%;height:100%;overflow:visible}.tooth-btn strong{font-size:10px;color:#536a80}.tooth-btn .tooth-figure .tooth-path{stroke:#6d89a9;stroke-width:2;fill:#f9fcff}.tooth-btn.cond-caries .tooth-path{fill:#fbe3e6;stroke:#d14b64}.tooth-btn.cond-restauracion .tooth-path{fill:#c7e5ff;stroke:#237fc9}.tooth-btn.cond-endodoncia .tooth-path{fill:#d2eafa;stroke:#5c91ca}.tooth-btn.cond-ausente .tooth-path{fill:#f4f5f7;stroke:#b6c0ca;stroke-dasharray:4 3}.tooth-btn.cond-corona .tooth-path{fill:#fff1cb;stroke:#dda22d}.tooth-btn.cond-sano .tooth-path{fill:#e0f7ea;stroke:#319d74}.dental-legend{display:flex;flex-wrap:wrap;gap:11px;padding-top:18px;margin-top:18px;border-top:1px solid #edf1f5}.legend{display:flex;gap:5px;align-items:center;font-size:10px;color:#8494aa}.dot{width:9px;height:9px;border-radius:3px;display:inline-block;background:#e5ebf1}.dot.caries{background:#df687a}.dot.restauracion{background:#5cacf4}.dot.endodoncia{background:#7aa5d4}.dot.corona{background:#e8b75a}.dot.ausente{background:#a2afc2}.dot.sano{background:#4bb792}.tooth-detail{border:1px solid #e5edf5;border-radius:15px;padding:19px;background:#fafeff}.tooth-detail h3{font-size:17px;margin:0 0 5px}.tooth-preview{text-align:center;border-radius:13px;background:#edf7ff;padding:15px;display:grid;place-items:center;margin:14px 0}.tooth-preview svg{width:60px;height:80px}.tooth-preview .tooth-path{stroke:#397fb2;fill:#fff;stroke-width:2}.tooth-detail .field{margin:0 0 13px}.tooth-detail .btn{width:100%}.mini-stats{display:flex;gap:12px;flex-wrap:wrap}.mini-stats span{color:#778da5;font-size:11px}.mini-stats strong{color:#263e5c;font-size:13px}.appointment-day{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.calendar-list{display:grid;grid-template-columns:90px 1fr;gap:0;border-top:1px solid #e6eef5}.time-slot{padding:20px 14px;color:#8295ad;border-right:1px solid #e6edf3;border-bottom:1px solid #e9eff5;font-size:12px}.slot-body{padding:10px 16px;border-bottom:1px solid #e9eff5;display:flex;gap:10px;flex-wrap:wrap;align-items:center;min-height:63px}.appointment-block{border-left:3px solid #2d8ce1;background:#eef7ff;padding:11px 12px;border-radius:6px 11px 11px 6px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex:1;min-width:230px}.appointment-block.green{border-color:#2ab77d;background:#f0fbf4}.appointment-block.orange{border-color:#e6ab4c;background:#fff9ec}.appointment-block.red{border-color:#ec7784;background:#fff2f4}.appointment-block strong{display:block;font-size:12px;color:#2a4360}.appointment-block small{display:block;font-size:10px;color:#7087a0;margin-top:5px}.worker-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.worker-card{border:1px solid #e3edf6;border-radius:16px;background:#fff;padding:20px;box-shadow:var(--shadow)}.worker-top{display:flex;align-items:center;gap:10px;margin-bottom:16px}.worker-top .avatar{width:45px;height:45px;font-size:15px}.worker-top h3{font-size:14px;margin:0 0 4px;color:#263f5b}.worker-top p{font-size:11px;margin:0;color:#8698ad}.worker-metrics{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e9eff6;border-radius:11px;overflow:hidden;margin:11px 0 15px}.worker-metrics div{padding:11px;text-align:center;background:#fbfdff}.worker-metrics div+div{border-left:1px solid #e9eff6}.worker-metrics strong{font-size:19px;color:#1c63b1;display:block}.worker-metrics small{font-size:10px;color:#8092a6}.worker-card .btn{width:100%}.filter-btns{display:flex;gap:7px;flex-wrap:wrap}.filter-btns .btn.active{background:#dbeeff;color:#1267b7;border-color:#9ac8e8}.modal-overlay{position:fixed;z-index:50;inset:0;background:rgba(7,26,49,.58);display:grid;place-items:center;padding:20px;overflow-y:auto}.modal{width:min(590px,100%);background:#fff;border-radius:20px;box-shadow:0 30px 80px #07182c60;max-height:calc(100vh - 40px);overflow-y:auto}.modal-top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 23px;border-bottom:1px solid #e8eef5}.modal-top h2{font-size:19px;margin:0 0 4px;letter-spacing:-.02em}.modal-top p{margin:0;font-size:11px;color:#91a0b1}.modal-content{padding:22px 23px}.modal-footer{padding:17px 23px;border-top:1px solid #e8eef5;display:flex;justify-content:flex-end;gap:9px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form-grid .full{grid-column:1/-1}.split-content{display:grid;grid-template-columns:300px minmax(0,1fr);gap:17px}.summary-box{border:1px solid #e5edf7;border-radius:14px;padding:16px;background:linear-gradient(135deg,#f4fafe,#fff)}.summary-box label{font-size:11px;color:#8296aa}.summary-box strong{display:block;font-size:24px;color:#0d4476;margin:5px 0}.toast{position:fixed;bottom:24px;right:25px;background:#0c3558;color:#fff;padding:13px 17px;border-radius:12px;font-size:12px;box-shadow:0 12px 45px #153d6560;z-index:80;max-width:340px}.toast.error{background:#a3394d}.mobile-toggle{display:none}.overlay-mobile{display:none}.nowrap{white-space:nowrap}@media(max-width:1240px){.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.worker-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cols-two{grid-template-columns:1fr}.tooth-layout{grid-template-columns:1fr}.tooth-detail{max-width:none}.topbar{padding:0 20px}.main-body{padding:24px}}@media(max-width:940px){.shell{grid-template-columns:1fr}.sidebar{position:fixed;left:0;top:0;z-index:25;width:255px;transform:translateX(-100%);transition:transform .2s}.sidebar.open{transform:translateX(0)}.overlay-mobile.show{display:block;position:fixed;inset:0;z-index:20;background:#0b233a70}.mobile-toggle{display:inline-flex}.login{grid-template-columns:1fr}.login-hero{min-height:350px;padding:32px}.login-copy{margin:60px 0 15px}.login-copy h1{font-size:34px}.hero-tooth{width:280px;height:280px;right:-70px;bottom:-70px}.login-side{padding:35px 20px}.login-panel{max-width:520px}.login-feature{padding:10px;font-size:11px}.login-foot{display:none}}@media(max-width:620px){.main-body{padding:16px}.topbar{height:62px;padding:0 13px}.topbar .search-global{display:none}.topbar-right .userbox>div:last-child{display:none}.page-head{flex-direction:column;gap:15px}.page-head h1{font-size:25px}.page-actions{width:100%}.page-actions .btn{flex:1}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.metric{padding:12px;gap:8px}.metric .metric-icon{height:34px;width:34px;border-radius:10px}.metric .metric-icon .svgicon{width:19px;height:19px}.metric strong{font-size:21px}.metric label{font-size:10px}.metric small{font-size:9px}.panel-head{padding:17px 14px 12px}.panel-pad{padding:14px}.quick-links{grid-template-columns:repeat(2,1fr)}.worker-grid,.detail-grid,.cols-equal,.form-grid,.split-content{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.tooth-layout{grid-template-columns:minmax(0,1fr)}.teeth-grid{gap:0;padding:0}.tooth-btn{padding:4px 0;gap:4px}.tooth-btn .tooth-figure{height:42px}.tooth-btn strong{font-size:8px}.odontocard{padding:13px 7px}.tooth-detail{padding:15px}.tabs{padding:0 5px}.tab{padding:13px 9px}.login-hero{min-height:280px}.login-copy{margin:38px 0 10px}.login-features{grid-template-columns:1fr 1fr}.login-copy p{font-size:13px}.login-logo{font-size:24px}.welcome{padding:20px}.welcome h2{font-size:20px}.calendar-list{grid-template-columns:62px 1fr}.time-slot{padding:21px 6px}.slot-body{padding:7px}.modal-overlay{padding:9px}.modal{border-radius:14px;max-height:calc(100vh - 18px)}}
+.login-hero .hero-tooth>.svgicon{width:100%;height:100%}.login-logo .logo-tooth>.svgicon{width:43px;height:43px}.tooth-preview .tooth-path{stroke:#397fb2;fill:#fff;stroke-width:2}
+
+/* ============================================================
+   Endomolar 2.0 — odontograma integrado y superficies interactivas
+   Las marcas clínicas son ilustrativas en esta DEMO.
+   ============================================================ */
+#odonto-app{display:block;min-width:0}
+.dental-feature-hero{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center;min-height:150px;background:linear-gradient(115deg,#092e55 0%,#125985 56%,#12a2bf 120%);border-radius:20px;padding:28px 32px;margin-bottom:16px;color:white;box-shadow:0 13px 30px rgba(8,60,112,.16)}
+.dental-feature-hero:after{content:"";position:absolute;right:11%;top:-100px;width:260px;height:260px;border:1px solid rgba(255,255,255,.15);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.045),0 0 0 60px rgba(255,255,255,.025)}
+.dental-feature-copy{z-index:1;position:relative}
+.dental-kicker{font-size:10px;font-weight:850;letter-spacing:.14em;color:#b9eff8;text-transform:uppercase}
+.dental-feature-copy h2{font-size:clamp(23px,3vw,33px);letter-spacing:-.045em;margin:8px 0 6px;color:white}
+.dental-feature-copy p{color:#d1e9f8;font-size:13px;line-height:1.55;margin:0;max-width:540px}
+.feature-symbol{z-index:1;opacity:.18;transform:rotate(-14deg)}
+.feature-symbol .svgicon{width:115px;height:115px}
+.dental-topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:0 0 15px}
+.dentition-tabs{display:inline-flex;gap:5px;background:white;border:1px solid #dfeaf6;border-radius:13px;padding:5px;box-shadow:var(--shadow)}
+.dentition-tabs button{border:0;background:transparent;color:#6b8199;padding:10px 15px;border-radius:10px;font-size:12px;font-weight:800;transition:.15s}
+.dentition-tabs button.on{background:#e6f3ff;color:#0865ac;box-shadow:inset 0 0 0 1px #bee3fc}
+.dental-main-grid{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:17px;align-items:start}
+.dental-chart-panel{padding:23px 21px}
+.dental-chart-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:17px;border-bottom:1px solid #edf2f8}
+.dental-chart-head h3,.dental-detail-top h3{margin:0;color:#123757;font-size:19px;letter-spacing:-.02em}
+.dental-chart-head p{font-size:12px;margin:5px 0 0;color:#8092a5}
+.stat-mini{padding:8px 11px;border-radius:12px;background:#e9f7fe;color:#086c9b;font-size:15px;font-weight:900;white-space:nowrap}
+.stat-mini span{font-size:10px;font-weight:700}
+.jaw-label{margin:22px 0 6px;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:800;color:#21465f}
+.jaw-label span{background:#e5f3fd;color:#1582bb;border-radius:7px;padding:6px 7px;font-size:9px;letter-spacing:.06em}
+.jaw-label small{font-weight:500;color:#91a0ac}
+.dental-grid{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:2px;padding:7px 0 12px}
+.dental-grid.baby-grid{grid-template-columns:repeat(10,minmax(0,1fr));max-width:560px;margin:auto}
+.fancy-tooth{position:relative;min-width:0;min-height:94px;padding:8px 2px;gap:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:12px;border:1px solid transparent;background:linear-gradient(180deg,#fbfdff 0%,#fff 100%);transition:background .16s,border-color .16s,transform .16s}
+.fancy-tooth:hover{transform:translateY(-3px);background:#eaf7ff;border-color:#cbe9fb}
+.fancy-tooth.selected{border-color:#1397e2;background:linear-gradient(180deg,#e1f4ff,#f5fbff);box-shadow:0 0 0 2px rgba(44,168,226,.12)}
+.fancy-tooth .tooth-figure{width:100%;height:58px;max-width:46px}
+.fancy-tooth .tooth-figure svg{height:100%;width:100%;filter:drop-shadow(0 3px 3px rgba(25,68,100,.09))}
+.fancy-tooth strong{color:#42637b;font-size:11px;line-height:1}
+.tooth-recorded-dot{position:absolute;top:5px;right:5px;width:5px;height:5px;border-radius:50%;background:#10a5ae}
+.midline{margin:4px 0 0;display:flex;align-items:center;gap:15px;color:#9daebb;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:850;white-space:nowrap}
+.midline:before,.midline:after{content:"";height:1px;background:linear-gradient(90deg,#e5eefa,#b8d6ea,#e5eefa);flex:1}
+.dental-legend-header{margin:24px 0 12px;padding-top:15px;border-top:1px solid #e9f0f6;font-size:10px;color:#869aac;letter-spacing:.1em;font-weight:900}
+.dental-legend-list{display:flex;gap:9px 16px;flex-wrap:wrap}
+.dental-legend-item{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#536f87;font-weight:600;white-space:nowrap}
+.dental-legend-item i{display:inline-block;height:10px;width:10px;background:var(--legend);border-radius:50%;box-shadow:0 0 0 2px white,0 0 0 3px #e1eaf2}
+.norm-note{margin-top:18px;background:#fffaf1;border:1px solid #fbead0;border-radius:10px;padding:11px 12px;font-size:11px;line-height:1.6;color:#9e7233}
+.dental-detail-card{border-radius:19px;padding:20px;background:white;border:1px solid #e2edf4;box-shadow:var(--shadow)}
+.dental-detail-top{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #eaf1f8;padding-bottom:12px}
+.dental-detail-top h3{margin-top:5px}
+.large-tooth{width:57px;height:67px;display:grid;place-items:center;border-radius:13px;background:#e7f6ff;flex-shrink:0}
+.large-tooth svg{height:59px;width:47px}
+.latest-finding{margin:14px 0 17px;background:#f4f9fd;border:1px solid #ebf1f7;border-radius:13px;padding:12px}
+.latest-finding p{font-size:12px;color:#7891a7;line-height:1.5;margin:8px 0 0}
+.dental-label{display:block;margin:11px 0 6px;font-size:12px;font-weight:800;color:#31526c}
+.dental-detail-card select,.dental-detail-card textarea{width:100%;border:1px solid #dce7f1;background:#fff;border-radius:10px;padding:10px 11px;font-size:12px;min-height:41px;color:#335169}
+.dental-detail-card textarea{min-height:83px;resize:vertical;line-height:1.5}
+.surface-title{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:17px}
+.surface-title strong{font-size:12px;color:#31526c}
+.surface-title span{font-size:10px;color:#93a5b3}
+.surface-picker{margin:12px auto 7px;width:160px;display:grid;grid-template-columns:repeat(3,48px);grid-template-rows:repeat(3,45px);gap:6px;justify-content:center}
+.surface{font-size:14px;font-weight:900;color:#7092a6;border:1px solid #d7e5ee;background:#f1f8fd;border-radius:11px;transition:.14s}
+.surface:hover{background:#d6eeff}
+.surface.on{background:linear-gradient(135deg,#1183ce,#0d6ec3);color:white;box-shadow:0 5px 12px rgba(15,110,195,.22);border-color:#0d6ec3}
+.super-top{grid-column:2;grid-row:1}.super-left{grid-column:1;grid-row:2}.super-core{grid-column:2;grid-row:2}.super-right{grid-column:3;grid-row:2}.super-bottom{grid-column:2;grid-row:3}
+.surface-hint{color:#859aab;font-size:10px;line-height:1.6;text-align:center;margin:8px auto 18px;max-width:250px}
+.dental-save-btn{display:flex;width:100%;margin-top:12px;min-height:43px}
+.dental-plan-association{border-top:1px solid #edf2f7;margin-top:20px;padding-top:16px}
+.dental-plan-title{font-weight:850;color:#355570;font-size:12px}
+.dental-plan-association p{font-size:11px;color:#8295a8;line-height:1.5;margin:9px 0 13px}
+.mini-plan{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:10px 0}
+.mini-plan strong{font-size:11px}
+.dental-history-cols{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:17px}
+.dental-events{padding:4px 16px 15px;max-height:350px;overflow:auto}
+.dental-event{display:flex;align-items:flex-start;gap:10px;padding:13px 0;border-bottom:1px solid #eef4f8;text-align:left;width:100%;background:transparent;color:inherit}
+.dental-event:last-child{border-bottom:0}
+.dental-event>div{flex:1;min-width:0}
+.dental-event strong{font-size:12px;color:#27425b}
+.dental-event p{font-size:11px;line-height:1.5;color:#617c92;margin:4px 0}
+.dental-event small{font-size:10px;color:#95a7b5}
+.event-color{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.event-number{width:33px;height:32px;display:grid;place-items:center;background:#e5f3fa;color:#0a719f;font-size:12px;border-radius:9px;font-weight:850;flex-shrink:0}
+.event-link{border:none;cursor:pointer}
+.event-link:hover{background:#f5fbff}
+.event-link>.svgicon{color:#9eb1bf;width:14px;height:14px;margin-top:10px}
+@media(max-width:1260px){.dental-main-grid{grid-template-columns:minmax(0,1fr)}.dental-detail-card{display:block}.dental-history-cols{grid-template-columns:1fr 1fr}}
+@media(max-width:770px){.dental-feature-hero{min-height:140px;padding:20px}.feature-symbol .svgicon{width:68px;height:68px}.dental-feature-copy h2{font-size:24px}.dental-main-grid,.dental-history-cols{grid-template-columns:minmax(0,1fr)}.dental-chart-panel{padding:15px 8px}.dental-grid{gap:0}.fancy-tooth{min-height:65px;padding:5px 0;border-radius:6px}.fancy-tooth .tooth-figure{height:40px}.fancy-tooth strong{font-size:8px}.jaw-label{padding-left:10px}.dental-legend-header,.dental-legend-list,.norm-note{margin-left:8px;margin-right:8px}.dental-topbar{flex-direction:column;align-items:stretch}.dental-topbar .btn{justify-content:center}.dentition-tabs button{font-size:11px;padding:9px}.dentition-tabs{justify-content:space-around}}
+@media print{body{background:white!important}.sidebar,.topbar,.page-head,.tabs,.dental-topbar,.dental-detail-card form,.dental-detail-card .dental-plan-association,.dental-topbar .btn,.login,.dental-history-cols .event-link>.svgicon{display:none!important}.main{margin:0!important;width:100%!important}.content{padding:0!important}.dental-main-grid{grid-template-columns:1fr 240px!important}.panel,.dental-detail-card{box-shadow:none!important}.fancy-tooth{break-inside:avoid}.dental-feature-hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}.dental-grid{grid-template-columns:repeat(16,minmax(0,1fr))}}
+.recorded-surfaces{border:1px dashed #d6e6ef;padding:12px;border-radius:12px;background:#fbfdff;margin-bottom:15px}.recorded-surfaces>strong{font-size:11px;color:#48687e}.recorded-surface-list{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.surface-chip{border:1px solid #e1eaf1;border-radius:7px;background:#f6fafd;padding:6px 7px;font-weight:850;font-size:11px;color:#3b6078;display:inline-flex;flex-direction:column;gap:1px;min-width:48px}.surface-chip[style*="--chip"]{border-top:3px solid var(--chip);padding-top:4px}.surface-chip small{font-size:8px;color:#879cad;font-weight:550;max-width:68px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.recorded-surface-note{font-size:9px;color:#95a8b7;line-height:1.5;margin:10px 0 0}
+
+/* ================================================================
+   Endomolar 3.0 | Maqueta interactiva inspirada en propuesta morada
+   Cambios visuales sin duplicar los módulos del menú.
+   ================================================================ */
+:root{--navy:#14253d;--blue:#408fe3;--cyan:#3074f1;--ink:#172044;--muted:#7c86a5;--line:#e7e9f9;--paper:#fff;--wash:#f6f7ff;--green:#1aab82;--shadow:0 9px 30px rgba(48,93,141,.075);--radius:18px;background:#f7f8fe;color:#172044}
+body{background:linear-gradient(180deg,#f8f9ff,#f3f5ff)}
+.btn{background:linear-gradient(105deg,#4898ed,#3585db);border-radius:12px;box-shadow:0 4px 14px rgba(68,148,233,.15)}
+.btn:hover{background:linear-gradient(105deg,#3b86d6,#2c72bc);box-shadow:0 7px 20px rgba(68,148,233,.2)}
+.btn.ghost{box-shadow:0 3px 10px rgba(60,91,124,.025);color:#3e5e81;border:1px solid #e2eff7}
+.btn.ghost:hover{background:#f6fbff}
+.btn:focus-visible,.tab:focus-visible,.nav-btn:focus-visible{outline:3px solid #94d2fc}
+.pill{background:#ebf6fe;color:#498dd5}.pill.violet{background:#e8f5fe;color:#418bdb}.pill.cyan{background:#e7f3ff;color:#1774ce}.pill.green{background:#d9f8ed;color:#069367}.pill.orange{background:#fff0d4;color:#ad720e}
+.panel{border:1px solid #e7e8fa;box-shadow:0 6px 22px rgba(32,73,116,.055);border-radius:19px}
+.shell{grid-template-columns:240px minmax(0,1fr)}
+.sidebar{background:radial-gradient(circle at 50% 95%,#256cb7 0%,transparent 25%),linear-gradient(180deg,#101536 0%,#14253e 68%,#0b2447 100%);border-radius:0 19px 19px 0;color:#d4e7f3;overflow:hidden}
+.brand{padding:25px 18px 17px;font-size:24px;gap:10px;line-height:1.05;align-items:center;white-space:nowrap;letter-spacing:-.05em}
+.brand-mark{border-radius:15px;width:48px;height:53px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,#4eb9ff,transparent 60%),linear-gradient(140deg,#1e7ad1,#3b86d7);box-shadow:0 0 18px rgba(102,169,241,.5),inset 0 0 8px rgba(255,255,255,.18)}
+.brand-mark .svgicon{width:33px;height:33px;color:#eafcff;filter:drop-shadow(0 2px 6px rgba(255,255,255,.3))}
+.brand>span{display:block}.brand i{font-size:12px;letter-spacing:0;color:#a7dafc;font-style:normal;vertical-align:top;margin-left:3px}
+.brand small{display:block;color:#c9e4f6;font-weight:500;font-size:12px;letter-spacing:0;margin-top:6px}
+.nav{padding:12px 13px;gap:7px;position:relative;z-index:2}
+.nav-btn{color:#d5e4ee;font-size:14px;padding:14px 15px;border-radius:12px;font-weight:670}
+.nav-btn.active{background:linear-gradient(100deg,#3154f2,#4898ee);box-shadow:0 9px 22px rgba(50,124,204,.36);color:white}
+.nav-btn:hover{background:#ffffff1a}
+.nav-btn .svgicon{width:20px;height:20px}
+.sidebar-decor{position:relative;min-height:100px;flex:1;overflow:hidden}
+.tooth-glow{position:absolute;bottom:5%;left:45px;width:150px;height:150px;color:#c1ebff;filter:drop-shadow(0 0 20px rgba(103,170,241,.8));transform:rotate(-7deg);opacity:.6}
+.tooth-glow .svgicon{width:100%;height:100%}
+.sidebar-bottom{position:relative;z-index:2;padding:13px 13px 20px}.clinic-chip{background:#ffffff18;border:1px solid #ffffff36;border-radius:13px}
+.clinic-chip .svgicon{color:#b6e1fd}.clinic-chip span{color:#c0d6e5}
+.logout-btn{margin-top:10px}
+.topbar{background:#fff;box-shadow:0 4px 24px rgba(43,79,118,.035);border-bottom:1px solid #edf4f9;height:75px;padding:0 30px}
+.topbar .search-global{width:min(580px,48vw);border:1px solid #c6e6fb;box-shadow:0 5px 19px rgba(70,142,218,.06);border-radius:14px;background:linear-gradient(100deg,#fff,#f8fcff);padding:0 16px;color:#6c92ba;min-height:44px}
+.search-global input{font-size:12px;letter-spacing:.01em;outline:none;border:none;flex:1;min-width:0;background:transparent;color:#22244e;padding:12px 0}
+.search-global input::placeholder{color:#7f9fc1}
+.topbar-right{gap:18px}.userbox{border-left:1px solid #ebf2f7;padding-left:14px;text-align:left}.userbox .avatar{order:-1;border-radius:50%;height:41px;width:41px}
+.userbox strong{font-size:12px;color:#1b2450}.userbox small{color:#7f85a5}
+.top-role{border-radius:20px;padding:7px 12px;background:#ebf6fe;color:#4b8ed6;font-size:11px;font-weight:800}
+.notification-dot{color:#5280b1;position:relative;display:flex;align-items:center}
+.notification-dot:after{content:'';position:absolute;right:0;top:0;width:6px;height:6px;border-radius:50%;background:#e94767;border:2px solid white}
+.main-body{padding:24px 26px;max-width:1900px;min-height:calc(100vh - 105px)}
+.demo-footer{font-size:10px;color:#97a0b6;padding:9px 25px;text-align:center}
+.page-head{margin-bottom:18px}.page-head h1{font-size:27px;color:#1a244a}.page-head .tag{color:#7197c0}
+/* Diferentes paneles de Inicio para cada rol, sin accesos repetidos */
+.v3-welcome{background:linear-gradient(102deg,#3281d6 0%,#5196df 42%,#378cf1 100%);margin-bottom:15px;min-height:142px;box-shadow:0 13px 23px rgba(75,147,225,.11);padding:26px 33px}
+.v3-welcome:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 58% -13%,rgba(255,255,255,.24),transparent 60%),linear-gradient(150deg,transparent 55%,rgba(255,255,255,.05) 55%,transparent 84%)}
+.v3-welcome .welcome-copy{z-index:1;position:relative}
+.welcome-overline{font-size:10px;font-weight:800;letter-spacing:.15em;color:#cfebfd}
+.v3-welcome h2{font-size:25px;letter-spacing:-.045em;margin:8px 0 6px}
+.v3-welcome p{font-size:13px;color:#eaf5fd}
+.wave{font-size:22px;vertical-align:middle}
+.hero-dental{position:absolute;right:70px;top:8px;width:150px;height:140px;color:#e8fbff;filter:drop-shadow(0 10px 20px rgba(16,59,164,.4));transform:rotate(12deg)}
+.hero-dental .svgicon{width:100%;height:100%;opacity:.9}
+.hero-spark{position:absolute;background:#e7efff;box-shadow:0 0 12px #fff;border-radius:10px;width:7px;height:7px}.spark-a{top:10px;right:-25px}.spark-b{bottom:20px;left:-20px}
+.v3-metrics{gap:12px;margin-bottom:14px}
+.v3-metrics .metric{padding:15px 17px;border-radius:18px;gap:12px;align-items:center;min-height:93px}
+.v3-metrics .metric label{color:#596388;font-size:11px;margin-bottom:3px}
+.v3-metrics .metric strong{color:#222855;font-size:25px;line-height:1.2}
+.v3-metrics .metric small{font-size:10px;margin-top:2px}
+.v3-metrics .metric-icon{width:48px;height:48px;border-radius:14px;background:#eaf6fe;color:#408fe3}
+.v3-metrics .metric-icon.violet{background:#eaf6fe;color:#408fe3}
+.v3-metrics .metric-icon.cyan{background:#e6f5ff;color:#218fe7}
+.home-main-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,1fr);gap:14px}
+.home-main-grid .panel{min-height:340px}
+.home-main-grid .panel-head{padding:22px 22px 13px}
+.home-main-grid .panel-head h3{font-size:17px;color:#222650}
+.home-main-grid .panel-head p{font-size:11px;color:#8e91b0}
+.home-appointments,.followup-list{padding:3px 18px 15px}
+.work-appointment{padding:12px 5px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #eef4f8}
+.work-appointment:last-child{border-bottom:none}
+.work-time{font-size:12px;letter-spacing:-.01em;min-width:59px;text-align:center;padding:9px 6px;border-radius:10px;color:#3b86d6;font-weight:850;background:#ecf7fe}
+.work-person{display:flex;gap:11px;align-items:center;flex:1;min-width:0}
+.work-person>div:last-child{min-width:0}
+.work-person strong,.followup-row strong{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#262c50}
+.work-person small,.followup-row small{display:block;font-size:10px;color:#888dac;line-height:1.4;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.avatar-tiny{border-radius:50%;height:34px;width:34px;background:linear-gradient(140deg,#d5eefe,#cce7fd);color:#4a7db4}
+.work-end{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.row-circle{border:0;background:#f4fbff;color:#6092c8;display:grid;place-items:center;border-radius:50%;height:28px;width:28px;cursor:pointer}
+.row-circle .svgicon{width:15px;height:15px}
+.home-followups{position:relative}
+.home-followups>*{position:relative;z-index:1}
+.home-followups .round-counter{display:grid;place-items:center;width:30px;height:30px;background:#fff0f4;border-radius:50%;font-weight:900;color:#ef4e6a}
+.followup-row{display:flex;gap:11px;padding:12px 2px;width:100%;text-align:left;align-items:center;background:transparent;border:0;border-bottom:1px solid #eef4f8;cursor:pointer}
+.followup-row>span:nth-child(2){flex:1;min-width:0}
+.followup-row>.svgicon{color:#a0bed2;width:16px;height:16px}
+.followup-static{cursor:default}
+.followup-icon{width:39px;height:39px;border-radius:12px;background:#e9f6fe;display:grid;place-items:center;color:#488ed9;flex-shrink:0}
+.followup-icon .svgicon{width:23px;height:23px}
+.track{display:block;height:4px;background:#ebf0f4;border-radius:10px;margin-top:9px;overflow:hidden;width:160px;max-width:90%}.track>span{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#5298e3,#319ade)}
+.followups-decor{position:absolute;inset:auto -30px -70px auto;width:200px;height:190px;z-index:0;opacity:.07;color:#498bd2}
+.followups-decor .svgicon{height:100%;width:100%}
+.home-note{font-size:10px;color:#7094ba;margin:14px 0;padding:12px 14px;border:1px solid #e4e5f4;border-radius:11px;background:#fafdff;display:flex;align-items:center;gap:9px}
+.home-note .svgicon{width:15px;height:15px;color:#709fd1}
+/* Expediente compacto, sin repetir Inicio ni plan en un módulo global */
+.breadcrumb{display:flex;align-items:center;gap:13px;color:#555c83;margin:0 0 15px;font-size:12px}
+.breadcrumb button{display:flex;align-items:center;gap:5px;background:transparent;border:none;font-weight:750;color:#6098d3}
+.breadcrumb button .svgicon{width:16px;height:16px;transform:rotate(180deg)}
+.breadcrumb strong{font-size:12px;color:#303456}
+.patient-banner{overflow:hidden;margin-bottom:16px;padding:20px 20px 0;display:flex;flex-wrap:wrap;gap:0;align-items:center;justify-content:space-between}
+.patient-banner-main{display:flex;gap:17px;align-items:center;padding-bottom:17px}
+.patient-large{border-radius:50%;background:linear-gradient(130deg,#a5d9fc,#c8e5ff);color:#39628d;height:73px;width:73px;font-size:23px;box-shadow:inset 0 0 0 3px white,0 3px 12px rgba(88,146,207,.14)}
+.patient-identity h1{font-size:22px;margin:0 0 6px;letter-spacing:-.04em;color:#22264c}
+.patient-identity p{margin:5px 0;font-size:12px;color:#565e83}
+.patient-identity p .svgicon{vertical-align:middle}
+.patient-banner-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:17px}
+.patient-tabs{flex:0 0 calc(100% + 40px);margin:0 -20px;display:flex;align-items:stretch;gap:6px;padding:9px 12px 10px;border-top:1px solid #eef0fc;background:linear-gradient(90deg,#fff,#fbfdff);overflow-x:auto}
+.patient-tabs .tab{display:inline-flex;justify-content:center;gap:7px;align-items:center;white-space:nowrap;flex:1;font-size:11px;font-weight:750;border-radius:12px;padding:11px 9px;color:#464e74;border:1px solid #eff6fa;background:#fff;box-shadow:0 3px 9px rgba(29,71,116,.045)}
+.patient-tabs .tab .svgicon{width:17px;height:17px;color:#608ab7}
+.patient-tabs .tab.active{border-color:transparent;background:linear-gradient(105deg,#4897ec,#3888dd);color:white;box-shadow:0 8px 15px rgba(56,123,194,.18)}
+.patient-tabs .tab.active .svgicon{color:white}
+/* Odontograma en tres columnas, mismo estilo del diseño seleccionado */
+#odonto-app{max-width:100%}
+.dental-topbar{margin:0 0 14px;justify-content:flex-end}
+.dentition-tabs{padding:3px;border-radius:12px;border-color:#e1eef7;box-shadow:none;margin-right:auto}
+.dentition-tabs button{padding:9px 16px;color:#5079a5}
+.dentition-tabs button.on{background:linear-gradient(120deg,#4994e4,#428edf);color:white;box-shadow:0 4px 10px rgba(69,140,216,.15)}
+.dental-main-grid{display:grid;grid-template-columns:175px minmax(0,1fr) 294px;gap:13px;align-items:start}
+.tools-panel{padding:17px 12px;overflow:hidden}
+.tools-panel h3{font-size:15px;color:#27294b;margin:2px 2px 7px}
+.tools-panel p{font-size:10px;line-height:1.6;color:#7f9fc1;margin:0 2px 15px}
+.finding-tools{display:grid;gap:7px}
+.finding-tool{width:100%;display:flex;align-items:center;gap:9px;text-align:left;min-height:37px;padding:8px 9px;background:linear-gradient(100deg,#fff,#fafdff);border:1px solid #e4eff6;border-radius:10px;color:#3b416d;font-size:11px;font-weight:650;box-shadow:0 2px 5px rgba(50,98,150,.05)}
+.finding-tool:hover{border-color:#a3d4f5;background:#f2faff}
+.finding-tool.active{color:white;background:linear-gradient(100deg,#5b9fe7,#4396ee);border-color:#5098e6;box-shadow:0 5px 13px rgba(61,138,220,.18)}
+.finding-dot{width:11px;height:11px;border-radius:4px;border:1px solid #ffffff99;flex-shrink:0}
+.tools-caption{padding:11px 8px 1px;font-size:10px;color:#87a5c5;line-height:1.6;display:flex;align-items:flex-start;gap:6px}
+.tools-caption .svgicon{width:14px;height:14px;color:#65a0df}
+.dental-chart-panel{padding:17px 14px}
+.dental-chart-head{border-bottom:none;padding-bottom:4px}
+.dental-chart-head h3{font-size:17px;color:#25294d}
+.stat-mini{border-radius:9px;background:#eaf6fe;color:#4685c9}
+.jaw-label{color:#41466c;font-size:11px;margin:14px 0 2px}
+.jaw-label span{background:#ebf6fe;color:#578cc4}
+.dental-grid{gap:0;padding:5px 0 10px}
+.fancy-tooth{min-height:93px;padding:7px 0;background:#fff;border-radius:8px}
+.fancy-tooth:hover{background:#f7fcff;border-color:#d6eefe}
+.fancy-tooth.selected{background:#ecf7fe;border-color:#63a6ee;box-shadow:inset 0 0 0 1px #b1ddfa,0 5px 10px rgba(70,144,224,.09)}
+.fancy-tooth .tooth-figure{height:58px}
+.fancy-tooth strong{font-size:10px;color:#2e4761}
+.dental-legend-header{font-size:9px;color:#8a8ca8;margin-top:8px}
+.dental-legend-list{gap:10px}
+.dental-legend-item{font-size:10px;color:#64678b}
+.norm-note{font-size:10px;line-height:1.45;padding:9px;background:#fffbf3;border-color:#fff0d4}
+.dental-detail-card{padding:17px 15px;border-radius:18px;border-color:#e4eff7}
+.dental-detail-top h3{font-size:17px;color:#273b50}
+.dental-detail-top{padding-bottom:9px}
+.large-tooth{background:#eaf4fa}
+.latest-finding{background:#f8fcff;border-color:#edf5fb;margin:12px 0}
+.dental-detail-card select,.dental-detail-card textarea{border-color:#dfeaf1}
+.dental-label{color:#424668}
+.surface.on{background:linear-gradient(100deg,#5c9fe6,#4291e6);border-color:#4c92dd;box-shadow:0 4px 10px rgba(68,141,220,.15)}
+.dental-plan-association{padding-top:13px;margin-top:14px}
+.dental-history-cols{margin-top:15px}
+.dental-history-cols>.panel{min-height:170px}
+.dental-save-btn{min-height:44px}
+.login-hero{background:radial-gradient(circle at 90% 85%,#3783d4 0%,transparent 35%),linear-gradient(135deg,#13153c 0%,#204368 65%,#2762a1 100%)}
+.login-hero:before{background:radial-gradient(circle at 60% 50%,#5a9be166,transparent 45%)}
+.login-copy h1 span,.login-logo span[style]{color:#b0defd!important}
+.login-feature .svgicon{color:#b1dffd}
+.login-panel .welcome-icon{background:#ecf7fe;color:#458fdf}
+.login-panel .field input:focus,.login-panel .field select:focus{border-color:#84c4ef;box-shadow:0 0 0 3px #8ec9f022}
+@media(max-width:1410px){.dental-main-grid{grid-template-columns:145px minmax(0,1fr) 265px;gap:10px}.tools-panel{padding:13px 9px}.finding-tool{font-size:10px;padding:7px}.fancy-tooth .tooth-figure{height:51px}.dental-chart-panel{padding:14px 9px}.dental-grid{gap:0}}
+@media(max-width:1220px){.dental-main-grid{grid-template-columns:160px minmax(0,1fr)}.dental-detail-card{grid-column:1/-1}.home-main-grid{grid-template-columns:1fr}.hero-dental{right:45px}.v3-metrics .metric{padding:13px}}
+@media(max-width:940px){.sidebar{border-radius:0 18px 18px 0}.topbar .search-global{width:min(480px,57vw)}.patient-banner-actions{margin-top:0}.dental-main-grid{grid-template-columns:160px minmax(0,1fr)}.main-body{padding:18px 16px}}
+@media(max-width:690px){.topbar{padding:0 14px}.top-role,.notification-dot{display:none}.main-body{padding:14px 12px}.v3-welcome{min-height:120px;padding:20px}.v3-welcome h2{font-size:21px}.v3-welcome p{max-width:75%;font-size:11px}.hero-dental{width:90px;height:96px;right:15px;top:25px}.v3-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.v3-metrics .metric{min-height:91px;padding:10px}.v3-metrics .metric strong{font-size:22px}.v3-metrics .metric-icon{width:35px;height:35px}.work-person .avatar-tiny{display:none}.work-appointment{gap:7px}.work-end>.pill{font-size:9px;padding:4px 5px}.row-circle{width:26px;height:26px}.patient-banner{padding:14px 12px 0}.patient-identity h1{font-size:18px}.patient-large{width:53px;height:53px;font-size:18px}.patient-banner-main{gap:10px}.patient-banner-actions{padding-bottom:11px}.patient-tabs{flex-basis:calc(100% + 24px);margin:0 -12px}.patient-tabs .tab{flex:none;padding:8px}.dental-main-grid{grid-template-columns:1fr}.tools-panel{padding:13px}.finding-tools{display:flex;flex-wrap:wrap;gap:6px}.finding-tool{min-height:31px;width:auto;padding:6px 9px}.dental-detail-card{grid-column:auto}.dental-history-cols{grid-template-columns:1fr}.dental-grid .fancy-tooth{min-height:64px}.dental-grid .fancy-tooth .tooth-figure{height:43px}.dental-chart-panel{padding:12px 8px}.dental-chart-head h3{font-size:14px}.dental-topbar{align-items:stretch}.dentition-tabs{margin:0;width:100%;justify-content:center}.dental-topbar .btn{width:100%}}
+@media(max-width:400px){.v3-metrics .metric{flex-direction:column;align-items:flex-start}.work-time{min-width:45px}.work-person strong{font-size:11px}.v3-welcome p{max-width:100%}.hero-dental{opacity:.16}}
+@media print{.tools-panel,.home-note,.demo-footer,.patient-banner-actions{display:none!important}.dental-main-grid{grid-template-columns:1fr 270px!important}}
+/* En pantallas grandes, historial inmediatamente debajo del esquema dental */
+@media(min-width:1221px){
+ .dental-main-grid>.tools-panel{grid-column:1;grid-row:1/3;align-self:start}
+ .dental-main-grid>.dental-chart-panel{grid-column:2;grid-row:1}
+ .dental-main-grid>.dental-detail-card{grid-column:3;grid-row:1/3;align-self:start}
+ .dental-main-grid>.dental-history-cols{grid-column:2;grid-row:2;grid-template-columns:1fr;margin-top:0}
+ .dental-main-grid>.dental-history-cols .dental-events{max-height:170px}
+}
+@media(min-width:691px) and (max-width:1220px){
+ .dental-main-grid>.tools-panel{grid-column:1;grid-row:1/3;align-self:start}
+ .dental-main-grid>.dental-chart-panel{grid-column:2;grid-row:1}
+ .dental-main-grid>.dental-history-cols{grid-column:2;grid-row:2;grid-template-columns:1fr;margin:0}
+ .dental-main-grid>.dental-detail-card{grid-column:1/-1;grid-row:3}
+}
+@media(max-width:690px){
+ .dental-main-grid>.tools-panel{grid-column:1;grid-row:1}
+ .dental-main-grid>.dental-chart-panel{grid-column:1;grid-row:2}
+ .dental-main-grid>.dental-detail-card{grid-column:1;grid-row:3}
+ .dental-main-grid>.dental-history-cols{grid-column:1;grid-row:4;margin-top:0}
+}
+
+/* Endomolar 4 demo: flujos clínicos por etapa */
+.df-workflow{margin-top:20px;padding:18px;border-radius:16px;border:1px solid #d7e6f0;background:linear-gradient(145deg,#f7fcff,#f2f8ff)}
+.df-workflow h3{font-size:15px;color:#20344f;margin:0 0 5px}
+.df-muted{color:#6e7186;font-size:12px;line-height:1.5;margin:4px 0 12px}
+.df-plan{border-radius:13px;background:#fff;border:1px solid #e4ecf1;padding:12px;margin:12px 0}
+.df-plan-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px;font-size:12px}
+.df-meter{height:7px;border-radius:10px;background:#e7f0f6;overflow:hidden;margin-bottom:10px}
+.df-meter span{display:block;height:100%;background:#5995d6;border-radius:10px;transition:width .2s}
+.df-step{display:flex;gap:8px;align-items:center;border-top:1px solid #edf3f7;padding:10px 0;flex-wrap:wrap}
+.df-step-icon{display:grid;place-items:center;width:23px;height:23px;border:1px solid #d5e0e7;border-radius:50%;font-size:11px;flex-shrink:0;color:#716d82}
+.df-step-icon.yes{background:#ddf8ed;color:#12784c;border-color:#b7eed7}
+.df-step-text{flex:1;min-width:120px;display:flex;flex-direction:column;gap:2px;font-size:12px}
+.df-step-text small{color:#7a7885;font-size:11px}
+.df-step .btn{font-size:11px!important;padding:8px!important;white-space:normal}
+.df-extraction-done{border-radius:10px;background:#e4f7ec;color:#1a794a;padding:10px;font-size:12px;display:flex;align-items:center;gap:7px;margin-top:8px}
+.df-schedule{width:100%;font-size:12px!important;white-space:normal;margin-top:10px}
+@media(max-width:640px){.df-workflow{padding:12px}.df-step{align-items:flex-start}.df-step .btn{width:100%}}
+
+
+/* ===== Endomolar 4.0 — Inicio de sesión con banner corporativo =====
+   Diseño aislado: no afecta a las pantallas del dashboard. */
+.df-login {
+  --df-primary:#257cda;
+  --df-deep:#0b1a2e;
+  --df-ink:#162336;
+  --df-line:#e3ecf2;
+  min-height:100vh;
+  min-height:100dvh;
+  display:grid;
+  grid-template-columns:minmax(0,1.27fr) minmax(400px,.73fr);
+  background:#fbfdff;
+  color:var(--df-ink);
+}
+.df-login *, .df-login *::before, .df-login *::after {box-sizing:border-box}
+.df-login__showcase {
+  position:relative;isolation:isolate;overflow:hidden;
+  background:radial-gradient(ellipse at 58% 44%,#2a77c9 0%,transparent 65%),
+    radial-gradient(ellipse at 8% 0%,#3483d8 0%,transparent 40%),
+    linear-gradient(155deg,#0e213b,#102c53 48%,#0c192b);
+  padding:clamp(26px,3.6vw,58px);
+  color:white;display:flex;flex-direction:column;justify-content:space-between;gap:28px;
+}
+.df-login__showcase:after {content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(118deg,rgba(255,255,255,.045),transparent 45%);z-index:-1;}
+.df-login__ambient {position:absolute;z-index:-1;width:330px;height:330px;border-radius:50%;filter:blur(85px);opacity:.4;pointer-events:none}
+.df-login__ambient--one{background:#4e9cef;left:-160px;top:35%}
+.df-login__ambient--two{background:#4190e5;right:-160px;bottom:-160px}
+.df-login__showcase-top {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;position:relative;z-index:1}
+.df-login__product{display:flex;gap:9px;align-items:center;font-weight:850;font-size:22px;letter-spacing:-.055em;color:#fff}
+.df-login__product-mark{display:grid;place-items:center;border:1px solid #86ccfb66;background:#85ccfb33;width:37px;height:37px;border-radius:12px;color:#b9e2fd}
+.df-login__product-mark .svgicon{width:25px;height:25px}
+.df-login__product-version{font-size:11px;font-weight:800;border:1px solid #8bc5ec66;border-radius:999px;padding:5px 7px;letter-spacing:0;color:#ddf1fe;margin-left:2px}
+.df-login__edition{font-size:10px;letter-spacing:.15em;font-weight:700;color:#b4d7ef}
+.df-login__art-wrap{position:relative;z-index:1;display:grid;place-items:center;width:100%;max-width:1120px;margin:auto;min-height:0}
+.df-login__art {display:block;width:100%;height:auto;max-height:min(63vh,720px);object-fit:contain;
+ border-radius:clamp(13px,1.8vw,25px);border:1px solid #abdcfc66;
+ box-shadow:0 30px 85px rgba(2,14,30,.43),0 0 45px rgba(89,161,239,.15);
+}
+.df-login__showcase-bottom{position:relative;z-index:1;display:flex;flex-direction:column;gap:20px}
+.df-login__caption{display:flex;align-items:center;gap:14px}
+.df-login__spark{width:43px;height:43px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;background:#ffffff14;border:1px solid #ffffff22;color:#c6e7fd}
+.df-login__spark .svgicon{width:25px;height:25px}
+.df-login__caption strong{display:block;font-size:clamp(15px,1.4vw,20px);letter-spacing:-.035em;color:#fff}
+.df-login__caption div>span{display:block;margin-top:6px;font-size:12px;line-height:1.45;color:#c0d4e2}
+.df-login__feature-row{display:flex;flex-wrap:wrap;gap:9px}
+.df-login__feature-row>span{display:inline-flex;align-items:center;gap:7px;color:#e5f4fe;font-size:11px;font-weight:670;border:1px solid #ffffff25;border-radius:999px;background:#ffffff0d;padding:9px 11px}
+.df-login__feature-row .svgicon{width:15px;height:15px;color:#b7e1fd}
+.df-login__aside{min-width:0;display:grid;place-items:center;background:radial-gradient(ellipse at 90% 0%,#e7f5fe 0%,transparent 52%),#fbfdff;padding:clamp(28px,4.2vw,64px) clamp(24px,3.8vw,62px);border-left:1px solid #e2ecf3}
+.df-login__panel{width:min(450px,100%)}
+.df-login__mobile-brand{display:none}
+.df-login__eyebrow{display:inline-flex;align-items:center;gap:9px;color:#417dbe;font-size:11px;letter-spacing:.13em;font-weight:850;margin-bottom:20px}
+.df-login__eyebrow-dot{width:8px;height:8px;border-radius:50%;background:#539eef;box-shadow:0 0 0 4px #dcf0fe}
+.df-login__panel h1{font-size:clamp(32px,3vw,46px);line-height:1.07;letter-spacing:-.055em;font-weight:850;margin:0 0 14px;color:#0d1828}
+.df-login__panel h1 span{color:#277dd8}
+.df-login__intro{font-size:14px;line-height:1.7;color:#4f79a5;margin:0 0 33px;max-width:345px}
+.df-login__form{display:flex;flex-direction:column;gap:18px}
+.df-login__field{display:flex;flex-direction:column;gap:9px}
+.df-login__field label{color:#223652;font-size:12px;font-weight:800}
+.df-login__control{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dbe3e9;border-radius:13px;min-height:54px;padding:0 15px;box-shadow:0 3px 10px rgba(21,46,82,.025);transition:border-color .2s,box-shadow .2s}
+.df-login__control:focus-within{border-color:#4a98eb;box-shadow:0 0 0 4px rgba(65,144,228,.12)}
+.df-login__control-icon{display:grid;place-items:center;color:#85a3c4;flex-shrink:0}
+.df-login__control-icon .svgicon{width:19px;height:19px}
+.df-login__control select,.df-login__control input{height:51px;width:100%;min-width:0;padding:0;background:transparent;border:0;outline:0;color:#273b50;font-size:13px;font-weight:600;box-shadow:none!important}
+.df-login__control select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:16px}
+.df-login__control input:focus-visible,.df-login__control select:focus-visible{outline:0}
+.df-login__chevron{display:grid;place-items:center;pointer-events:none;color:#6289b3;transform:rotate(90deg)}
+.df-login__chevron .svgicon{width:15px;height:15px}
+.df-login__reveal{flex-shrink:0;display:grid;place-items:center;width:35px;height:35px;border:0;background:transparent;border-radius:9px;color:#7c9dc0;padding:0}
+.df-login__reveal:hover{background:#eff7fc;color:#3279c5}
+.df-login__reveal .svgicon{width:19px;height:19px}
+.df-login__error{min-height:16px;color:#b42339;font-size:12px;line-height:1.3;margin-top:-6px}
+.df-login__submit{width:100%;min-height:55px;border:0;border-radius:13px;padding:14px 19px;display:flex;align-items:center;justify-content:center;gap:11px;color:#fff;background:linear-gradient(105deg,#2b84e4,#2270c3);box-shadow:0 12px 24px rgba(39,122,210,.23);font-size:14px;font-weight:800;letter-spacing:-.01em;transition:transform .2s,box-shadow .2s,filter .2s}
+.df-login__submit .svgicon{width:19px;height:19px;transition:transform .2s}
+.df-login__submit:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(39,122,210,.32);filter:brightness(1.05)}
+.df-login__submit:hover .svgicon{transform:translateX(3px)}
+.df-login__submit:active{transform:translateY(0)}
+.df-login__demo{border:1px solid #dfebf3;background:linear-gradient(140deg,#f7fcff,#eff8fe);border-radius:14px;padding:16px;margin-top:27px;font-size:12px;line-height:1.55;color:#43668b}
+.df-login__demo-head{display:flex;gap:8px;align-items:center;color:#3772b2}
+.df-login__demo-head .svgicon{width:16px;height:16px}
+.df-login__demo p{margin:7px 0 0}
+.df-login__demo strong{color:#255c96}
+.df-login__demo .df-login__demo-warning{color:#5c85b0;font-size:11px}
+.df-login__footer{margin-top:26px;display:flex;align-items:center;gap:7px;color:#82a1c3;font-size:11px}
+@media(max-width:1200px){
+ .df-login{grid-template-columns:minmax(0,1.02fr) minmax(390px,.98fr)}
+ .df-login__showcase{padding:32px;gap:20px}
+ .df-login__edition{display:none}
+ .df-login__aside{padding:32px}
+}
+@media(max-width:850px){
+ .df-login{grid-template-columns:1fr}
+ .df-login__showcase{padding:24px 23px 25px;gap:20px}
+ .df-login__showcase-top{display:none}
+ .df-login__art-wrap{max-width:670px;margin:0 auto}
+ .df-login__art{max-height:none;border-radius:15px}
+ .df-login__showcase-bottom{max-width:670px;width:100%;margin:0 auto}
+ .df-login__caption{display:none}
+ .df-login__feature-row{justify-content:center;gap:8px}
+ .df-login__feature-row>span{font-size:10px;padding:7px 9px}
+ .df-login__aside{border-left:0;padding:33px 24px 43px}
+ .df-login__panel{max-width:530px}
+ .df-login__mobile-brand{display:flex;align-items:center;gap:7px;margin-bottom:26px;color:#101f34;font-size:20px;letter-spacing:-.04em}
+ .df-login__mobile-brand>span{display:grid;place-items:center;color:#3381d5;width:29px;height:29px}
+ .df-login__mobile-brand strong span{color:#2a80dc}
+ .df-login__mobile-brand small{font-size:10px;letter-spacing:0;margin-left:2px;color:#7194ba;font-weight:800}
+ .df-login__panel h1{font-size:36px}
+}
+@media(max-width:450px){
+ .df-login__showcase{padding:12px 12px 14px;gap:12px}
+ .df-login__art{border-radius:11px}
+ .df-login__feature-row{gap:6px}
+ .df-login__feature-row>span{font-size:9px;padding:7px 8px}
+ .df-login__aside{padding:29px 20px 34px}
+ .df-login__eyebrow{font-size:10px}
+ .df-login__panel h1{font-size:33px}
+ .df-login__intro{margin-bottom:25px}
+ .df-login__form{gap:15px}
+ .df-login__demo{margin-top:24px}
+}
+@media(prefers-reduced-motion:reduce){.df-login__submit,.df-login__submit .svgicon,.df-login__control{transition:none}}
+
+
+/* Endomolar · paleta institucional azul marino / azul eléctrico / turquesa.
+   Solo estilos: se mantiene la misma estructura, módulos y funcionamiento. */
+:root{--navy:#06295b;--blue:#0869dc;--cyan:#32dbe9;--ink:#0b2450;--muted:#637c99;--line:#deebfb;--wash:#f5faff;--shadow:0 9px 30px rgba(17,79,143,.075);background:#f4f9ff;color:var(--ink)}
+body{background:linear-gradient(180deg,#f7fbff,#edf6ff)}
+.sidebar{background:radial-gradient(circle at 82% 92%,rgba(43,205,237,.18),transparent 35%),linear-gradient(175deg,#031b45 0%,#062d69 66%,#0758a9 100%);color:#d8ecff}
+.brand-mark{background:linear-gradient(140deg,#3de4e6,#0871e1 72%,#06489f);box-shadow:0 0 18px rgba(36,173,239,.32)}
+.brand i{color:#70eced}
+.nav-btn.active,.nav-btn[aria-current="page"]{background:linear-gradient(100deg,#079ddd,#0d6ae9);color:#fff}
+.btn{background:linear-gradient(105deg,#0c7fe9,#0751be);box-shadow:0 4px 14px rgba(14,105,217,.16)}
+.btn:hover{background:linear-gradient(105deg,#056fd1,#063d9b);box-shadow:0 7px 20px rgba(14,105,217,.22)}
+.v3-welcome{background:linear-gradient(108deg,#063875 0%,#0762be 57%,#008fd2 100%);box-shadow:0 13px 23px rgba(15,93,177,.14)}
+.welcome-overline{color:#adf8ff}
+.v3-metrics .metric-icon,.v3-metrics .metric-icon.violet{background:#e5f5ff;color:#0a67cc}
+.topbar .search-global{border-color:#cee3fd;background:linear-gradient(100deg,#fff,#f1f8ff);color:#4e80af}
+
+/* =============================================================
+   IMPRESION DEL ODONTOGRAMA - A4 horizontal
+   No modifica la pantalla ni la logica clinica. Corrige las
+   columnas fijas y las reglas de escritorio que encogian el mapa.
+   ============================================================= */
+@page { size: A4 landscape; margin: 11mm 12mm 13mm; }
+@media print {
+  html,body { background:#fff!important; width:auto!important; min-width:0!important; margin:0!important; padding:0!important; color:#18304e!important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  #login-root,.overlay-mobile,.sidebar,.topbar,.demo-footer,.breadcrumb,
+  .patient-banner-actions,.patient-tabs,.dental-topbar,.tools-panel,
+  .dental-detail-card form,.dental-plan-association,.dental-detail-card .df-schedule,
+  .dental-detail-card .df-step button,.event-link>.svgicon,
+  .modal-overlay,#toast-root { display:none!important; }
+
+  /* La cuadricula general retenia la columna de 240px de la barra lateral. */
+  #workspace,#app,.shell,.main,.main-body,#page-content {
+    display:block!important; position:static!important; float:none!important;
+    width:100%!important; max-width:none!important; min-width:0!important;
+    height:auto!important; min-height:0!important;
+    margin:0!important; padding:0!important; overflow:visible!important;
+  }
+  #workspace { display:block!important; }
+  .shell { grid-template-columns:none!important; }
+  .main { grid-column:auto!important; }
+
+  /* Cabecera resumida del paciente, sin los botones de edicion. */
+  .patient-banner {
+    display:block!important; width:100%!important; padding:9px 15px!important;
+    border:1px solid #ccddef!important; border-radius:9px!important;
+    box-shadow:none!important; margin:0 0 11px!important; overflow:visible!important;
+    break-inside:avoid; page-break-inside:avoid;
+  }
+  .patient-banner-main { display:flex!important; gap:13px!important; padding:0!important; }
+  .patient-large { width:45px!important; height:45px!important; font-size:15px!important; }
+  .patient-identity h1 { font-size:19px!important; margin:0 0 4px!important; }
+  .patient-identity p { font-size:10px!important; margin:2px 0!important; }
+
+  /* Un solo ancho real de papel: el mapa no puede quedar en columna derecha. */
+  #odonto-app { display:block!important; width:100%!important; }
+  #odonto-app::before {
+    content:'ODONTOGRAMA  |  REGISTRO DENTAL';
+    display:block; margin:0 0 9px; padding:0 0 7px;
+    color:#0b4b94; font-size:15px; font-weight:850; letter-spacing:.025em;
+    border-bottom:2px solid #2595da;
+  }
+  .dental-main-grid { display:block!important; width:100%!important; max-width:none!important;
+    grid-template-columns:none!important; grid-template-rows:none!important; }
+  .dental-main-grid>.dental-chart-panel,
+  .dental-main-grid>.dental-detail-card,
+  .dental-main-grid>.dental-history-cols { grid-column:auto!important; grid-row:auto!important; width:100%!important; max-width:none!important; }
+  .panel,.dental-detail-card { box-shadow:none!important; }
+  .dental-chart-panel { display:block!important; padding:10px 13px!important; border-radius:9px!important;
+    border:1px solid #ccddef!important; break-inside:avoid; page-break-inside:avoid; }
+  .dental-chart-head h3 { font-size:15px!important; }
+  .dental-chart-head p { font-size:9px!important; }
+  .jaw-label { font-size:10px!important; margin:7px 0 0!important; }
+  .dental-grid { display:grid!important; grid-template-columns:repeat(16,minmax(0,1fr))!important;
+    width:100%!important; max-width:none!important; gap:2px!important; padding:3px 0 7px!important; }
+  .dental-grid.baby-grid { grid-template-columns:repeat(10,minmax(0,1fr))!important; }
+  .fancy-tooth { min-width:0!important; min-height:55px!important; height:60px!important; padding:1px 0!important;
+    border-radius:5px!important; box-shadow:none!important; break-inside:avoid; }
+  .fancy-tooth .tooth-figure { height:43px!important; }
+  .fancy-tooth svg { max-width:100%!important; max-height:100%!important; }
+  .fancy-tooth strong { font-size:9px!important; }
+  .midline { margin:4px 0!important; padding:2px!important; font-size:8px!important; }
+  .dental-legend-header { font-size:9px!important; margin:7px 0 4px!important; }
+  .dental-legend-list { display:flex!important; flex-wrap:wrap!important; gap:5px 9px!important; margin:0!important; }
+  .dental-legend-item { font-size:8px!important; white-space:nowrap!important; }
+  .norm-note { font-size:8px!important; padding:6px!important; margin:7px 0 0!important; }
+
+  /* Datos del diente, sin campos editables y sin cortar tarjetas. */
+  .dental-detail-card { display:grid!important; grid-template-columns:minmax(0,.7fr) minmax(0,1.5fr) minmax(0,1.25fr)!important;
+    align-items:start!important; gap:9px!important; padding:11px 13px!important; margin:10px 0 0!important;
+    border:1px solid #ccddef!important; border-radius:9px!important; break-inside:avoid; page-break-inside:avoid; }
+  .dental-detail-top { border:0!important; padding:0!important; margin:0!important; }
+  .dental-detail-top h3 { font-size:16px!important; }
+  .large-tooth { display:none!important; }
+  .latest-finding { padding:8px!important; margin:0!important; font-size:10px!important; }
+  .latest-finding p { margin:4px 0 0!important; font-size:9px!important; }
+  .recorded-surfaces { padding:7px!important; margin:0!important; }
+  .recorded-surface-list { gap:3px!important; margin-top:5px!important; }
+  .surface-chip { min-width:27px!important; padding:4px!important; font-size:9px!important; }
+  .recorded-surface-note { font-size:8px!important; margin:5px 0 0!important; }
+  .df-workflow { grid-column:1/-1!important; margin:0!important; padding:8px 9px!important; }
+  .df-workflow h3 { font-size:12px!important; margin:0 0 4px!important; }
+  .df-workflow .df-muted { font-size:9px!important; margin:3px 0!important; }
+  .df-plan { padding:7px!important; margin:4px 0!important; }
+  .df-step { padding:5px 0!important; }
+  .df-step-text small { font-size:8px!important; }
+
+  /* Historias en columnas anchas, con saltos de pagina naturales. */
+  .dental-history-cols { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:auto!important; gap:10px!important; margin:10px 0 0!important; }
+  .dental-history-cols>.panel { min-width:0!important; min-height:0!important; height:auto!important;
+    border:1px solid #ccddef!important; border-radius:9px!important; break-inside:avoid; page-break-inside:avoid; }
+  .dental-history-cols .panel-head { padding:9px 11px 7px!important; }
+  .dental-history-cols .panel-head h3 { font-size:13px!important; }
+  .dental-events { max-height:none!important; overflow:visible!important; padding:0 11px 8px!important; }
+  .dental-event { padding:6px 0!important; gap:6px!important; break-inside:avoid!important; }
+  .dental-event strong { font-size:10px!important; }
+  .dental-event p { font-size:9px!important; margin:2px 0!important; overflow-wrap:anywhere!important; }
+  .dental-event small { font-size:8px!important; }
+  .event-number { width:25px!important; height:25px!important; font-size:10px!important; }
+  .pill { padding:3px 7px!important; font-size:9px!important; }
+}
+
+
+/* Presupuestos: mismo estilo azul que Endomolar, sin alterar otros módulos. */
+.quote-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:20px}
+.quote-kpis .panel{padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.quote-kpis span{font-size:13px;color:#627d99}.quote-kpis strong{font-size:29px;color:#0c4a89}
+.quote-list{overflow:hidden}.quote-list-title{padding:22px 24px;border-bottom:1px solid #e6edf7}
+.quote-list-title h2{margin:0;font-size:17px;color:#1c3554}.quote-list-title p{margin:6px 0 0;color:#7d90a5;font-size:12px}
+.quote-table-actions{display:flex;gap:7px;flex-wrap:wrap}.quote-list-empty{padding:28px 15px!important;text-align:center;color:#879ab0}
+.quote-warning{display:flex;align-items:center;gap:8px;padding:15px;color:#63819e;font-size:11px}
+.quote-topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.quote-back{background:none;border:0;color:#1b77c0;font-size:12px;font-weight:750;display:flex;align-items:center;gap:8px;padding:8px 0}.quote-back .svgicon{width:15px;height:15px}
+.quote-section{padding:24px;margin-bottom:16px;min-width:0}.quote-step-head{display:flex;gap:13px;align-items:center;margin-bottom:22px}
+.quote-step{display:grid;place-items:center;background:linear-gradient(135deg,#0c79d5,#16b5d6);color:white;border-radius:12px;width:38px;height:38px;flex-shrink:0;font-weight:850;font-size:17px}
+.quote-step-head h2{font-size:18px;color:#14385a;margin:0 0 5px}.quote-step-head p{font-size:12px;color:#8093a8;margin:0}
+.quote-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.quote-field{display:flex;flex-direction:column;gap:8px;min-width:0;font-size:12px;color:#355673;font-weight:780}
+.quote-field span b{color:#ea6b6b}.quote-field input,.quote-field select,.quote-field textarea{font-family:inherit;min-width:0;width:100%;border:1px solid #d5e5f4;border-radius:11px;padding:11px 12px;font-size:13px;font-weight:500;color:#183a5c;background:#fff;outline:none}
+.quote-field input:focus,.quote-field select:focus,.quote-field textarea:focus{border-color:#1387d9;box-shadow:0 0 0 3px #168de218}.quote-field textarea{resize:vertical;min-height:84px;line-height:1.5}.quote-field :disabled{background:#f4f7fa;color:#71859c}
+.quote-dentition{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.quote-dentition button{border:1px solid #d5e7f6;border-radius:10px;padding:10px 13px;color:#34729b;background:white;font-size:12px;font-weight:750}.quote-dentition button.active{background:linear-gradient(110deg,#168be0,#398fe4);color:white;border-color:#168be0}
+.quote-editor-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.72fr);gap:18px;align-items:start}
+.quote-jaw-chart{padding:20px 16px;border:1px solid #e1ebf6;border-radius:15px;background:#fcfeff;min-width:0}.quote-arch-label{color:#163c67;font-weight:850;font-size:13px;margin-bottom:14px}.quote-arch-label small{font-weight:500;font-size:11px;color:#8299ae;margin-left:8px}
+.quote-teeth{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:2px;min-width:0;margin-bottom:12px}
+.quote-tooth{position:relative;border:1px solid transparent;border-radius:9px;background:transparent;padding:7px 2px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:5px;color:#789abb}
+.quote-tooth span{display:flex;justify-content:center;width:100%;height:47px}.quote-tooth svg{width:100%;height:100%;max-width:35px;stroke:#afcde4;fill:#fff;stroke-width:2}
+.quote-tooth small{font-size:10px;font-weight:800;color:#1e456b}.quote-tooth.selected{background:#e7f5ff;border-color:#47a6fb}.quote-tooth.selected svg{stroke:#138ee8}.quote-tooth.with-item svg{stroke:#09a9bd}.quote-tooth i{position:absolute;right:8%;top:6px;width:7px;height:7px;border-radius:50%;background:#09c1b2}
+.quote-midline{margin:9px 0 17px;display:flex;align-items:center;gap:12px;color:#9aafc1;font-size:9px;font-weight:850;letter-spacing:.15em;white-space:nowrap}.quote-midline:before,.quote-midline:after{content:"";height:1px;background:#dce7ef;flex:1}
+.quote-chart-note{font-size:11px;line-height:1.6;color:#718ba4;border-top:1px solid #e3edf5;padding-top:14px;margin-top:7px}
+.quote-piece-card{background:linear-gradient(180deg,#eff9ff,#fff 40%);padding:18px;border:1px solid #cfe8f9;border-radius:15px;display:flex;flex-direction:column;gap:15px}
+.quote-piece-head{display:flex;align-items:center;gap:13px;border-bottom:1px solid #dcebf7;padding-bottom:15px}.quote-piece-head>div{width:56px;height:59px;display:grid;place-items:center;background:#dbefff;border-radius:13px;color:#168cdb}.quote-piece-head svg{width:35px;height:43px;stroke:#1392d5;fill:#fff;stroke-width:2}.quote-piece-head span{display:flex;flex-direction:column;gap:5px}.quote-piece-head small{letter-spacing:.07em;color:#6d95b5;font-size:9px;font-weight:800}.quote-piece-head strong{color:#163b62;font-size:20px}
+.quote-piece-card>.btn{width:100%;min-height:43px}.quote-number{display:inline-block;background:#e8f4ff;color:#1874c9;padding:7px 9px;border-radius:9px;font-weight:850}
+.quote-items-table .quote-item-note{display:block;font-size:11px;color:#8594a9;margin-top:5px}.quote-total{margin:12px 0 17px auto;background:linear-gradient(115deg,#e3f5ff,#defbf7);border-radius:14px;padding:16px 21px;display:flex;justify-content:space-between;align-items:center;gap:15px;max-width:480px;color:#23628c}.quote-total span{font-weight:750}.quote-total strong{font-size:25px;color:#085392}
+.quote-notes{max-width:100%}.quote-actions-panel{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px;margin-bottom:24px}.quote-actions-panel h3{margin:0 0 7px;color:#16355b;font-size:16px}.quote-actions-panel p{max-width:630px;margin:0;font-size:12px;line-height:1.7;color:#778ca5}.quote-bottom-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.quote-bottom-actions .btn{white-space:nowrap}
+@media(max-width:1200px){.quote-editor-grid{grid-template-columns:minmax(0,1fr)}.quote-teeth{gap:5px}.quote-tooth span{height:55px}.quote-actions-panel{flex-direction:column;align-items:stretch}.quote-bottom-actions{justify-content:flex-start}}
+@media(max-width:740px){.quote-kpis{grid-template-columns:1fr;gap:8px}.quote-info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quote-section{padding:15px}.quote-tooth{padding:6px 0}.quote-tooth span{height:30px}.quote-tooth small{font-size:8px}.quote-step-head h2{font-size:15px}.quote-bottom-actions{flex-direction:column}.quote-bottom-actions .btn{width:100%}}
+@media(max-width:430px){.quote-info-grid{grid-template-columns:1fr}.quote-tooth span{height:24px}.quote-tooth small{font-size:7px}.quote-jaw-chart{padding:12px 7px}}
+/* Documento de presupuesto: diseño autónomo, independiente del odontograma de pantalla. */
+#quote-print-root{display:none}
+@media print{
+ @page{size:A4 portrait;margin:13mm 14mm 15mm}
+ body.quote-print{background:#fff!important;margin:0!important;color:#182f4a!important}
+ body.quote-print > *:not(#quote-print-root){display:none!important}
+ body.quote-print #quote-print-root{display:block!important;width:100%!important;max-width:none!important;position:static!important;margin:0!important;padding:0!important;visibility:visible!important}
+ body.quote-print .quote-pdf-page{font-family:Arial,Helvetica,sans-serif!important;color:#182f4a!important;font-size:10pt;line-height:1.45;background:#fff!important}
+ body.quote-print .quote-pdf-page *{box-sizing:border-box}
+ body.quote-print .quote-pdf-header{display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:2px solid #1684c9;padding:1mm 0 5mm;margin-bottom:7mm}
+ body.quote-print .quote-pdf-brand{display:flex;align-items:center;gap:12px}
+ body.quote-print .quote-pdf-logo{width:47px;height:47px;background:#0d64af;border-radius:12px;color:white;display:flex;align-items:center;justify-content:center}
+ body.quote-print .quote-pdf-logo .svgicon{width:30px;height:30px}
+ body.quote-print .quote-pdf-brand strong{display:block;font-size:19pt;color:#083d79;line-height:1.12}
+ body.quote-print .quote-pdf-brand small{display:block;font-size:9pt;color:#5f809e;margin-top:3px}
+ body.quote-print .quote-pdf-number{text-align:right;font-size:10pt;color:#0a639e}
+ body.quote-print .quote-pdf-number span{display:block;font-weight:800}
+ body.quote-print .quote-pdf-number small{color:#658099;display:block;margin-top:3px;font-size:9pt}
+ body.quote-print .quote-pdf-title{margin-bottom:7mm}
+ body.quote-print .quote-pdf-title span{color:#1698ad;font-size:9pt;letter-spacing:1.4px;font-weight:800}
+ body.quote-print .quote-pdf-title h1{font-size:22pt;color:#103e73;margin:3px 0 5px;line-height:1.15}
+ body.quote-print .quote-pdf-title p{font-size:10pt;color:#617e96;margin:0}
+ body.quote-print .quote-pdf-patient{background:#f2f9ff;border:1px solid #d8eaf8;border-radius:10px;padding:15px 17px;margin-bottom:7mm;break-inside:avoid}
+ body.quote-print .quote-pdf-page h2{margin:0 0 10px;font-size:12pt;color:#124a7d}
+ body.quote-print .quote-pdf-patient>div{display:grid;grid-template-columns:1fr 1fr;gap:9px 24px}
+ body.quote-print .quote-pdf-patient p{display:flex;gap:9px;margin:0;min-width:0;overflow-wrap:anywhere}
+ body.quote-print .quote-pdf-patient p span{font-weight:700;color:#7390a6;min-width:62px}
+ body.quote-print .quote-pdf-patient p strong{color:#193958}
+ body.quote-print .quote-pdf-treatments{margin:0 0 6mm}
+ body.quote-print .quote-pdf-intro{margin:-4px 0 10px;color:#6986a2;font-size:9pt}
+ body.quote-print .quote-pdf-treatments table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:9.5pt}
+ body.quote-print .quote-pdf-treatments th{background:#0e5eaa;color:#fff;text-align:left;padding:10px 9px;font-size:9pt}
+ body.quote-print .quote-pdf-treatments th:nth-child(1){width:14%}
+ body.quote-print .quote-pdf-treatments th:nth-child(2){width:26%}
+ body.quote-print .quote-pdf-treatments th:nth-child(3){width:42%}
+ body.quote-print .quote-pdf-treatments th:nth-child(4){width:18%;text-align:right}
+ body.quote-print .quote-pdf-treatments td{padding:10px 9px;border-bottom:1px solid #d9e8f2;vertical-align:top;overflow-wrap:anywhere}
+ body.quote-print .quote-pdf-treatments tr:nth-child(even){background:#f5faff}
+ body.quote-print .quote-pdf-treatments tr{break-inside:avoid}
+ body.quote-print .quote-pdf-tooth{color:#0c7ed2;background:#def1ff;border-radius:6px;padding:6px 9px;display:inline-block}
+ body.quote-print .quote-pdf-treatments td small{display:block;color:#617e9b;font-size:8pt;margin-top:4px}
+ body.quote-print .quote-pdf-price{text-align:right;font-weight:800;white-space:nowrap;color:#0e4e86}
+ body.quote-print .quote-pdf-amount{display:flex;align-items:center;justify-content:space-between;background:#e7f8fc;border:1px solid #bdeaf2;padding:13px 17px;border-radius:9px;margin:0 0 7mm;break-inside:avoid}
+ body.quote-print .quote-pdf-amount span{font-weight:800;color:#145577;font-size:12pt}
+ body.quote-print .quote-pdf-amount strong{font-size:21pt;color:#07589f}
+ body.quote-print .quote-pdf-notes{margin-bottom:5mm;border-left:3px solid #20b2c6;padding:3px 12px;break-inside:avoid}
+ body.quote-print .quote-pdf-notes p{margin:0;color:#486a87;white-space:normal}
+ body.quote-print .quote-pdf-info{background:#f4f9ff;border-radius:9px;padding:12px 15px;margin-top:4mm;break-inside:avoid}
+ body.quote-print .quote-pdf-info b{color:#134a7b}
+ body.quote-print .quote-pdf-info p{color:#4c6b83;font-size:9pt;margin:3px 0 0}
+ body.quote-print .quote-pdf-signatures{margin-top:14mm;display:flex;gap:34px;justify-content:space-between;break-inside:avoid}
+ body.quote-print .quote-pdf-signatures>div{width:45%;text-align:center;color:#62809c;font-size:9pt}
+ body.quote-print .quote-pdf-signatures i{display:block;height:1px;background:#9eb9ce;margin-bottom:7px}
+ body.quote-print .quote-pdf-page footer{margin-top:9mm;padding-top:9px;border-top:1px solid #e1edf6;text-align:center;font-size:8pt;color:#88a0b5}
+ body.quote-print .quote-pdf-page{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+/* Endomolar: odontograma sencillo — diagnóstico, plan, costo y cita en una pieza. */
+.od-step-label{display:flex;align-items:center;gap:8px;margin:18px 0 10px;font-weight:850;font-size:12px;color:#104f88;border-top:1px solid #e5eff8;padding-top:14px}
+.od-step-label span{display:grid;place-items:center;background:#dff3ff;color:#0d66b6;width:25px;height:25px;border-radius:50%;font-size:12px;flex-shrink:0}
+.od-compact-fields{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:start}
+.od-compact-fields>div{min-width:0}
+.od-compact-fields input,.od-compact-fields select{width:100%;min-width:0;border:1px solid #dce7f1;border-radius:10px;padding:10px 9px;min-height:41px;background:#fff;color:#335169;font-size:12px}
+.dental-detail-card .dental-label{display:block;font-size:11px;margin:12px 0 6px;color:#264964;font-weight:750}
+.od-small-note{font-size:11px;line-height:1.6;color:#546d87;background:#f0f7ff;border-radius:10px;padding:10px;margin:13px 0 6px}
+.od-form-error{color:#b42837;font-size:11px;line-height:1.4;margin:5px 0}
+.od-form-error:empty{display:none}
+.od-plan-meta{font-size:11px;line-height:1.7;color:#60788d;margin:0 0 8px}
+.od-old-plan{padding:7px 0}
+.dental-history-cols>.panel{width:100%}
+.dental-history-cols .panel-head p{max-width:620px;line-height:1.5}
+@media(min-width:1221px){.dental-main-grid>.dental-history-cols{grid-template-columns:1fr}}
+@media(max-width:430px){.od-compact-fields{grid-template-columns:1fr 1fr;gap:6px}.od-compact-fields input,.od-compact-fields select{padding:8px 5px;font-size:11px}}
+@media print{
+ .dental-history-cols{grid-template-columns:1fr!important}
+ .od-small-note,.od-form-error,.od-step-label{display:none!important}
+}
+
+/* Mapa e historial alineados en la misma columna, sin espacios en blanco. */
+.odonto-center-column{display:flex;flex-direction:column;gap:15px;min-width:0;grid-column:2;grid-row:1/3;align-self:start}
+.odonto-center-column .dental-history-cols{margin:0;display:grid;grid-template-columns:1fr;min-width:0}
+.odonto-center-column .dental-history-cols>.panel{min-width:0}
+@media(min-width:1221px){
+ .dental-main-grid>.tools-panel{grid-column:1;grid-row:1/3}
+ .dental-main-grid>.dental-detail-card{grid-column:3;grid-row:1/3}
+}
+@media(min-width:691px) and (max-width:1220px){
+ .odonto-center-column{grid-column:2;grid-row:1/3}
+ .dental-main-grid>.dental-detail-card{grid-column:1/-1;grid-row:3}
+}
+@media(max-width:690px){
+ .odonto-center-column{grid-column:1;grid-row:2}
+ .dental-main-grid>.dental-detail-card{grid-column:1;grid-row:3}
+}
+@media print{
+ .odonto-center-column{display:block!important;width:100%!important;max-width:none!important;grid-column:auto!important;grid-row:auto!important}
+ .odonto-center-column .dental-history-cols{display:grid!important;grid-template-columns:1fr!important;margin:10px 0 0!important}
+ .dental-detail-card{margin:10px 0!important}
+}
+
+
+/* Ajuste de presentación: odontograma limpio y panel compacto. */
+@media screen and (min-width:1421px){
+  #odonto-app .dental-main-grid{grid-template-columns:165px minmax(0,1fr) minmax(355px,390px);gap:14px}
+}
+@media screen and (min-width:1221px) and (max-width:1420px){
+  #odonto-app .dental-main-grid{grid-template-columns:135px minmax(0,1fr) minmax(310px,345px);gap:10px}
+}
+@media screen {
+  #odonto-app .dental-detail-card{min-width:0;padding:17px 18px;box-shadow:0 7px 28px rgba(20,80,130,.07)}
+  #odonto-app .dental-detail-top{padding-bottom:10px}
+  #odonto-app .large-tooth{width:50px;height:57px}
+  #odonto-app .large-tooth svg{width:42px;height:53px}
+  #odonto-app .latest-finding{padding:9px 11px;margin:11px 0 13px}
+  #odonto-app .latest-finding p{font-size:11px;margin:4px 0 0}
+  #odonto-app .od-form-section{min-width:0}
+  #odonto-app .od-step-label{margin:13px 0 7px;padding-top:12px;font-size:12px}
+  #odonto-app .od-step-label span{width:22px;height:22px;font-size:11px}
+  #odonto-app .dental-detail-card .dental-label{margin:9px 0 5px;font-size:11px}
+  #odonto-app .dental-detail-card select,#odonto-app .dental-detail-card textarea,#odonto-app .od-compact-fields input{min-height:36px;padding:8px 10px;font-size:12px;border-radius:9px}
+  #odonto-app .dental-detail-card textarea{min-height:61px}
+  #odonto-app .od-compact-fields{gap:9px}
+  #odonto-app .surface-title{margin-top:12px}
+  #odonto-app .surface-picker{display:flex;align-items:center;justify-content:space-between;gap:7px;width:100%;max-width:380px;margin:9px 0 5px}
+  #odonto-app .surface-picker .surface{width:20%;height:38px;min-width:0;max-width:68px;border-radius:9px}
+  #odonto-app .surface-hint{margin:6px 0 12px;max-width:none;text-align:left;line-height:1.5;font-size:10px}
+  #odonto-app .od-small-note{padding:8px 10px;margin:12px 0 8px;font-size:10px;line-height:1.5}
+  #odonto-app .dental-save-btn{min-height:40px;margin-top:10px;font-size:12px}
+  #odonto-app .df-workflow{margin-top:13px;padding:0;border-radius:11px;overflow:hidden}
+  #odonto-app .df-workflow-summary{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:13px;cursor:pointer;list-style:none;line-height:1.35;color:#164777}
+  #odonto-app .df-workflow-summary::-webkit-details-marker{display:none}
+  #odonto-app .df-workflow-summary strong{font-size:12px}
+  #odonto-app .df-workflow-summary span{font-size:10px;color:#527da0;white-space:nowrap}
+  #odonto-app .df-workflow-summary:after{content:'⌄';font-size:18px;color:#166fba}
+  #odonto-app .df-workflow[open] .df-workflow-summary:after{transform:rotate(180deg)}
+  #odonto-app .df-workflow-content{padding:0 13px 13px;border-top:1px solid #dcecf6}
+  #odonto-app .df-workflow-content .df-muted{font-size:11px;line-height:1.5;margin:9px 0}
+}
+@media screen and (min-width:691px) and (max-width:1220px){
+  #odonto-app .dental-detail-card{padding:18px 20px}
+  #odonto-app .od-short-form{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:24px;align-items:start}
+  #odonto-app .od-form-evaluation{grid-row:span 2}
+  #odonto-app .od-form-footer{grid-column:1/-1}
+  #odonto-app .dental-detail-card .od-step-label{margin-top:14px}
+}
+@media screen and (max-width:690px){
+  #odonto-app .dental-detail-card{padding:14px}
+  #odonto-app .surface-picker .surface{height:43px}
+  #odonto-app .df-workflow-summary{flex-wrap:wrap}
+}
+/* In the printable record show treatment follow-up, even if collapsed on screen. */
+@media print{
+  #odonto-app .df-workflow-summary{display:none!important}
+  #odonto-app .df-workflow-content{display:block!important}
+}
